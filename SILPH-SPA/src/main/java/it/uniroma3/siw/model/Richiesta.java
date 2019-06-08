@@ -1,5 +1,6 @@
 package it.uniroma3.siw.model;
 
+import java.util.List;
 import java.util.Set;
 
 import javax.persistence.*;
@@ -17,8 +18,8 @@ public class Richiesta {
 	@OneToOne
 	private Funzionario funzionario;
 	
-	@OneToMany
-	private Set<Fotografia> fotografie;
+	@OneToMany(targetEntity = Fotografia.class)
+	private List<Fotografia> fotografie;
 
 	public Long getPrimaryKey() {
 		return primaryKey;
@@ -44,11 +45,11 @@ public class Richiesta {
 		this.funzionario = funzionario;
 	}
 
-	public Set<Fotografia> getFotografie() {
+	public List<Fotografia> getFotografie() {
 		return fotografie;
 	}
 
-	public void setFotografie(Set<Fotografia> fotografie) {
+	public void setFotografie(List<Fotografia> fotografie) {
 		this.fotografie = fotografie;
 	}
 	
