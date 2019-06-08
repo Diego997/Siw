@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://wwww.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1" />
+<title>Foto</title>
+</head>
+<body>
+
+	<form action="#" th:action="@{/uploadImage}" th:object="${fotografia}"
+		method="POST" enctype="multipart/form-data">
+		<div th:if="${#fields.hasAnyErrors()}">
+			<p th:each="err : ${#fields.errors('*')}" th:text="${err}">...</p>
+		</div>
+		<h4 th:text="#{msg.nome}">Nome:</h4>
+		<input type="text" th:field="*{nome}" /> <br></br> <input type="file"
+			name="imageFile" multiple="multiple" /> <input type="submit"
+			value="Upload" />
+	</form>
+
+</body>
+</html>

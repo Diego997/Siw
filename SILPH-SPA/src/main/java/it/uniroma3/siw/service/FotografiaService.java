@@ -30,19 +30,25 @@ public class FotografiaService {
 		return fotografiaRepository.findAll();
 	}
 	
-	public void aggiorna(Fotografia fotografia) {
-		fotografiaRepository.update(fotografia);
-	}
 	
 	public void cancella(Fotografia fotografia) {
 		fotografiaRepository.delete(fotografia);
 	}
 	
-	public void salvaFotoImage(MultipartFile imageFile) throws Exception{
-		String folder = "/photos/";
+	public void salvaFoto(MultipartFile imageFile, Fotografia fotografia) throws Exception{
+		String folder = "/uploads/";
 		byte[] bytes = imageFile.getBytes();
 		
 		Path path = Paths.get(folder + imageFile.getOriginalFilename());
 		Files.write(path, bytes);
+		fotografia.setImg(bytes);
+		 System.out.println(path.toAbsolutePath());
+		fotografiaRepository.save(fotografia);
+		
+	}
+
+	public boolean alreadyExists(Fotografia o) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 }

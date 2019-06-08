@@ -26,9 +26,6 @@ public class RichiestaService {
 		return richiestaRepository.findAll();
 	}
 	
-	public void aggiorna(Richiesta richiesta) {
-		richiestaRepository.update(richiesta);
-	}
 	
 	public void cancella(Richiesta richiesta) {
 		richiestaRepository.delete(richiesta);
