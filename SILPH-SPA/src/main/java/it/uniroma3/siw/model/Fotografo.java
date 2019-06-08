@@ -12,7 +12,9 @@ public class Fotografo {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long primaryKey;
 	
+	@Column
 	private String nome;
+	@Column
 	private String cognome;
 	@OneToMany
 	private Set<Album> album;

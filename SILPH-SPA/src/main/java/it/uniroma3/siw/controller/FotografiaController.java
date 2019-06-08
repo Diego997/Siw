@@ -39,18 +39,12 @@ public class FotografiaController {
 		return "start";
 	}
 	@PostMapping("/uploadImage")
-	public String uploadImage(@RequestParam("imageFile") MultipartFile imageFile, @Valid @ModelAttribute("fotografia") Fotografia fotografia, Model model, BindingResult bindingResult ) {
-		this.fotografiaValidator.validate(fotografia, bindingResult);
-		if (!bindingResult.hasErrors()) {
-			try {
-				fotografiaService.salvaFoto(imageFile, fotografia);
-				model.addAttribute("fotografie", this.fotografiaService.tutti());
-				return "foto";
-			}catch (Exception e) {
-				return "start";
-			}
-		}
-		return "start";
+	public String uploadImage(@RequestParam("imageFile") MultipartFile imageFile, @Valid @ModelAttribute("fotografia") Fotografia fotografia, Model model, BindingResult bindingResult ) throws Exception {
+		//this.fotografiaValidator.validate(fotografia, bindingResult);
+		//if (!bindingResult.hasErrors())
+		fotografiaService.salvaFoto(imageFile, fotografia);
+		model.addAttribute("fotografia", fotografia);
+		return "foto";
 	}
 
 }

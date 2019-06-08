@@ -17,7 +17,6 @@ public class Fotografia {
 	private String desc;
 	
 	@Lob
-	@Type(type="org.hibernate.type.BinaryType")
 	private byte[] img;
 	
 	public Long getPrimaryKey() {

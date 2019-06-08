@@ -9,7 +9,9 @@ public class Cliente {
 	@Id
 	private String email;
 
+	@Column
 	private String nome;
+	@Column
 	private String cognome;
 	
 	public String getEmail() {
