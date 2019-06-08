@@ -11,9 +11,12 @@ public class Richiesta {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long primaryKey;
 	
+	@OneToOne
 	private Cliente cliente;
+	@OneToOne
 	private Funzionario funzionario;
 	
+	@OneToMany
 	private Set<Fotografia> fotografie;
 
 	public Long getPrimaryKey() {

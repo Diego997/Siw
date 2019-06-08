@@ -10,6 +10,7 @@ public interface FotografiaRepository extends JpaRepository<Fotografia, Long>{
 
 	public Fotografia findByPrimaryKey(Long id);
 
-	public void update(Fotografia fotografia);
+	//public void update(Fotografia fotografia);
+	
 
 }

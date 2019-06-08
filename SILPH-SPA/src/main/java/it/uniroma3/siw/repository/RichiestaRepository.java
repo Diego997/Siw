@@ -9,6 +9,7 @@ import it.uniroma3.siw.model.Richiesta;
 public interface RichiestaRepository extends JpaRepository<Richiesta, Long>{
 	
 	public Richiesta findByPrimaryKey(Long id);
-	public void update(Richiesta cliente);
+	
+	//public void update(Richiesta cliente);
 	
 }

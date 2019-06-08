@@ -30,15 +30,12 @@ public class FotografiaService {
 		return fotografiaRepository.findAll();
 	}
 	
-	public void aggiorna(Fotografia fotografia) {
-		fotografiaRepository.update(fotografia);
-	}
 	
 	public void cancella(Fotografia fotografia) {
 		fotografiaRepository.delete(fotografia);
 	}
 	
-	public void salvaFotoImage(MultipartFile imageFile) throws Exception{
+	public void salvaFoto(MultipartFile imageFile, Fotografia fotografia) throws Exception{
 		String folder = "/photos/";
 		byte[] bytes = imageFile.getBytes();
 		

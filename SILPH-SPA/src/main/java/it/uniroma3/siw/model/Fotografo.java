@@ -13,6 +13,7 @@ public class Fotografo {
 	
 	private String nome;
 	private String cognome;
+	@OneToMany
 	private Set<Album> album;
 	
 	public Long getPrimaryKey() {

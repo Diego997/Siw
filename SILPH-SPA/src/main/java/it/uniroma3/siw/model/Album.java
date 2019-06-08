@@ -9,9 +9,12 @@ public class Album {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long primaryKey;
-	private String nome;
 	
+	@Column
+	private String nome;
+	@Column
 	private String desc;
+	@OneToMany
 	private Set<Fotografia> fotografie;
 	
 	public Long getPrimaryKey() {
