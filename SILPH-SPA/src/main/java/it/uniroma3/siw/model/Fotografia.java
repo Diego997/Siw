@@ -1,5 +1,7 @@
 package it.uniroma3.siw.model;
 
+import java.util.Arrays;
+
 import javax.persistence.*;
 import org.hibernate.annotations.Type;
 
@@ -14,11 +16,50 @@ public class Fotografia {
 	@Column
 	private String nome;
 	@Column
-	private String desc;
+	private String descrizione;
 	
 	@Lob
-	@Type(type="org.hibernate.type.BinaryType")
-	private byte[] img;
+	private byte[] img;	
+	
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((descrizione == null) ? 0 : descrizione.hashCode());
+		result = prime * result + Arrays.hashCode(img);
+		result = prime * result + ((nome == null) ? 0 : nome.hashCode());
+		result = prime * result + ((primaryKey == null) ? 0 : primaryKey.hashCode());
+		return result;
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Fotografia other = (Fotografia) obj;
+		if (descrizione == null) {
+			if (other.descrizione != null)
+				return false;
+		} else if (!descrizione.equals(other.descrizione))
+			return false;
+		if (!Arrays.equals(img, other.img))
+			return false;
+		if (nome == null) {
+			if (other.nome != null)
+				return false;
+		} else if (!nome.equals(other.nome))
+			return false;
+		if (primaryKey == null) {
+			if (other.primaryKey != null)
+				return false;
+		} else if (!primaryKey.equals(other.primaryKey))
+			return false;
+		return true;
+	}
+
 	
 	public Long getPrimaryKey() {
 		return primaryKey;
@@ -33,10 +74,10 @@ public class Fotografia {
 		this.nome = nome;
 	}
 	public String getDesc() {
-		return desc;
+		return descrizione;
 	}
 	public void setDesc(String desc) {
-		this.desc = desc;
+		this.descrizione = desc;
 	}
 	public byte[] getImg() {
 		return img;
