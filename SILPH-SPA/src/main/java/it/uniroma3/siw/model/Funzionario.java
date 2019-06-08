@@ -3,6 +3,7 @@ package it.uniroma3.siw.model;
 import javax.persistence.*;
 
 @Entity
+@Table(name="funzionario")
 public class Funzionario {
 
 	@Id

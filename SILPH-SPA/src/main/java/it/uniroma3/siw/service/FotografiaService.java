@@ -42,4 +42,9 @@ public class FotografiaService {
 		Path path = Paths.get(folder + imageFile.getOriginalFilename());
 		Files.write(path, bytes);
 	}
+
+	public boolean alreadyExists(Fotografia o) {
+		// TODO Auto-generated method stub
+		return false;
+	}
 }
