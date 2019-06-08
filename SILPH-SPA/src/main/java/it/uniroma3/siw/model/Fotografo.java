@@ -5,6 +5,7 @@ import java.util.Set;
 import javax.persistence.*;
 
 @Entity
+@Table(name="fotografo")
 public class Fotografo {
 
 	@Id

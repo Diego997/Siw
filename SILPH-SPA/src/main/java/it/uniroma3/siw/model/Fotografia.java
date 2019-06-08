@@ -4,6 +4,7 @@ import javax.persistence.*;
 import org.hibernate.annotations.Type;
 
 @Entity
+@Table(name="fotografia")
 public class Fotografia {
 
 	@Id
