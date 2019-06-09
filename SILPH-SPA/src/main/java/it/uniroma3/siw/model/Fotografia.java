@@ -1,9 +1,6 @@
 package it.uniroma3.siw.model;
 
-import java.util.Arrays;
-
 import javax.persistence.*;
-import org.hibernate.annotations.Type;
 
 @Entity
 @Table(name="fotografia")
@@ -16,8 +13,9 @@ public class Fotografia {
 	@Column
 	private String nome;
 	@Column
-	private String descrizione;	
-	@Lob
+	private String descrizione;
+
+	@Column(name="img")
 	private byte[] img;
 	
 	@Override

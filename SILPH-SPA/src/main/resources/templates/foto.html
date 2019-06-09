@@ -6,7 +6,8 @@
 </head>
 <body>
 
-	<img th:src="${fotografia} == null ? _ : @{'data:image/png;base64,'+${fotografia}}">
 
+<p th:text="${fotografia.nome}">Static content</p>
+<img th:src="${img} == null ? _ : @{'data:image/png;base64,'+${img}}">
 </body>
 </html>

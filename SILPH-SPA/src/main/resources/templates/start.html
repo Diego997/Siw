@@ -8,18 +8,22 @@
 
 	<form action="#" th:action="@{/uploadImage}" th:object="${fotografia}"
 		method="POST" enctype="multipart/form-data">
-		<div th:if="${#fields.hasAnyErrors()}">
+
+
+		<div class="alert alert-danger" th:if="${#fields.hasErrors('*')}">
 			<p th:each="err : ${#fields.errors('*')}" th:text="${err}"></p>
 		</div>
-		<h2 th:text="#{msg.nome}">Nome:</h2>
-		<input type="text" th:field="*{nome}"/>
 
-		<h2 th:text="#{msg.descrizione}">Descrizione:</h2>
-		<input type="text" th:field="*{descrizione}"/> <br>
+		<span th:text="#{msg.nome}">Nome:</span>
+		<input type="text" th:field="*{nome}" /> <span th:text="#{required.fotografia.nome}"></span>
+
+		<span th:text="#{msg.descrizione}">Descrizione:</span>
+		<input type="text" th:field="*{descrizione}" value=""/> <br>
 		<br>
-		<input type="file" name="imageFile" multiple="multiple" />
+		<input type="file" name="imgFile" multiple="multiple" />
 		<input type="submit"
 			value="Upload" />
+
 	</form>
 
 </body>
