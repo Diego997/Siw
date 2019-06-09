@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Foto</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>NAME</th>
+        <th>IMG</th>
+    </tr>
+    <tr th:each="fotografia : ${fotografia}">
+        <td th:text="${fotografia.nome}">Name</td>
+        <td>
+            <img th:src="${fotografia.img} == null ? _ : @{'data:image/png;base64,'+*{T(org.springframework.util.Base64Utils).encodeToString(fotografia.img)}}" width="100" height="100">
+        </td>
+    </tr>
+</table>
+</body>
+</html>
