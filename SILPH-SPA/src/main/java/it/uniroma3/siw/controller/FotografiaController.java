@@ -42,14 +42,12 @@ public class FotografiaController {
 	}
 
 	@GetMapping("/fotografia/{id}")
-	public void showProductImage(@PathVariable Long id,
-	                               HttpServletResponse response) throws IOException {
-	response.setContentType("image/jpeg"); // Or whatever format you wanna use
+	public String showProductImage(@PathVariable Long id, Model model) {
 
 	Fotografia fotografia = fotografiaService.cercaPerId(id);
 
-	InputStream is = new ByteArrayInputStream(fotografia.getImg());
-	IOUtils.copy(is, response.getOutputStream());
+        model.addAttribute("fotografia", Base64.getEncoder().encodeToString(fotografia.getImg()));
+        return "foto";
 	}
 	
 	@GetMapping("/uploadImage")
@@ -57,15 +55,18 @@ public class FotografiaController {
 		model.addAttribute("fotografia", new Fotografia());
 		return "start";
 	}
+
 	@PostMapping("/uploadImage")
 	public String uploadImage(@RequestParam("imageFile") MultipartFile imageFile, @Valid @ModelAttribute("fotografia") Fotografia fotografia, Model model, BindingResult bindingResult ) throws Exception {
-		//this.fotografiaValidator.validate(fotografia, bindingResult);
-		//if (!bindingResult.hasErrors())
+		this.fotografiaValidator.validate(fotografia, bindingResult);
+		if (!bindingResult.hasErrors()) {
 
-		fotografiaService.salvaFoto(imageFile, fotografia);
-		//model.addAttribute("fotografia", fotografia.getImg());
-		model.addAttribute("fotografia", Base64.getEncoder().encodeToString(fotografia.getImg()));
-		return "foto";
+            fotografiaService.salvaFoto(imageFile, fotografia);
+            model.addAttribute("fotografia", Base64.getEncoder().encodeToString(fotografia.getImg()));
+            return "foto";
+        }
+		else
+		    return "start";
 	}
 
 }

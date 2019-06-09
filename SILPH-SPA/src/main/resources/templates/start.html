@@ -9,11 +9,16 @@
 	<form action="#" th:action="@{/uploadImage}" th:object="${fotografia}"
 		method="POST" enctype="multipart/form-data">
 		<div th:if="${#fields.hasAnyErrors()}">
-			<p th:each="err : ${#fields.errors('*')}" th:text="${err}">...</p>
+			<p th:each="err : ${#fields.errors('*')}" th:text="${err}"></p>
 		</div>
-		<h4 th:text="#{msg.nome}">Nome:</h4>
-		<input type="text" th:field="*{nome}" /> <br></br> <input type="file"
-			name="imageFile" multiple="multiple" /> <input type="submit"
+		<h2 th:text="#{msg.nome}">Nome:</h2>
+		<input type="text" th:field="*{nome}"/>
+
+		<h2 th:text="#{msg.descrizione}">Descrizione:</h2>
+		<input type="text" th:field="*{descrizione}"/> <br>
+		<br>
+		<input type="file" name="imageFile" multiple="multiple" />
+		<input type="submit"
 			value="Upload" />
 	</form>
 

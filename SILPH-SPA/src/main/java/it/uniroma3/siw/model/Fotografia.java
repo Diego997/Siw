@@ -69,10 +69,10 @@ public class Fotografia {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public String getDesc() {
+	public String getDescrizione() {
 		return descrizione;
 	}
-	public void setDesc(String desc) {
+	public void setDescrizione(String desc) {
 		this.descrizione = desc;
 	}
 	public byte[] getImg() {
