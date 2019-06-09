@@ -5,6 +5,7 @@ import java.util.Set;
 
 import javax.persistence.*;
 
+
 @Entity
 @Table(name="richiesta")
 public class Richiesta {

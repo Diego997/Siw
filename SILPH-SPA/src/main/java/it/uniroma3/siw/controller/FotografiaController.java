@@ -3,6 +3,7 @@ package it.uniroma3.siw.controller;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Base64;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -60,8 +61,10 @@ public class FotografiaController {
 	public String uploadImage(@RequestParam("imageFile") MultipartFile imageFile, @Valid @ModelAttribute("fotografia") Fotografia fotografia, Model model, BindingResult bindingResult ) throws Exception {
 		//this.fotografiaValidator.validate(fotografia, bindingResult);
 		//if (!bindingResult.hasErrors())
+
 		fotografiaService.salvaFoto(imageFile, fotografia);
-		model.addAttribute("fotografia", fotografia.getImg());
+		//model.addAttribute("fotografia", fotografia.getImg());
+		model.addAttribute("fotografia", Base64.getEncoder().encodeToString(fotografia.getImg()));
 		return "foto";
 	}
 

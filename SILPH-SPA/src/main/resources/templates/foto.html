@@ -6,7 +6,7 @@
 </head>
 <body>
 
-	<img class="card-img-top" th:src="@{'fotografia/' + @{fotografia.img}}">
+	<img th:src="${fotografia} == null ? _ : @{'data:image/png;base64,'+${fotografia}}">
 
 </body>
 </html>
