@@ -6,7 +6,7 @@
 </head>
 <body>
 
-	<img th:src="@{'/uploads/' + ${fotografia.img}}"/>
+	<img class="card-img-top" th:src="@{'fotografia/' + @{fotografia.img}}">
 
 </body>
 </html>

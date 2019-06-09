@@ -40,9 +40,9 @@ public class FotografiaService {
 		byte[] bytes = imageFile.getBytes();
 		
 		Path path = Paths.get(folder + imageFile.getOriginalFilename());
-		Files.write(path, bytes);
+		//Files.write(path, bytes);
 		fotografia.setImg(bytes);
-		 System.out.println(path.toAbsolutePath());
+		System.out.println(path.toAbsolutePath());
 		fotografiaRepository.save(fotografia);
 		
 	}

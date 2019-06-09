@@ -25,7 +25,6 @@ public class Fotografia {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((descrizione == null) ? 0 : descrizione.hashCode());
-		result = prime * result + Arrays.hashCode(img);
 		result = prime * result + ((nome == null) ? 0 : nome.hashCode());
 		result = prime * result + ((primaryKey == null) ? 0 : primaryKey.hashCode());
 		return result;
@@ -43,8 +42,6 @@ public class Fotografia {
 			if (other.descrizione != null)
 				return false;
 		} else if (!descrizione.equals(other.descrizione))
-			return false;
-		if (!Arrays.equals(img, other.img))
 			return false;
 		if (nome == null) {
 			if (other.nome != null)
@@ -81,8 +78,8 @@ public class Fotografia {
 	public byte[] getImg() {
 		return img;
 	}
-	public void setImg(byte[] img) {
-		this.img = img;
+	public void setImg(byte[] filemode) {
+		this.img = filemode;
 	}
 	
 }
