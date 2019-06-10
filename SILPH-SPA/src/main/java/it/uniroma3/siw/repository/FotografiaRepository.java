@@ -8,9 +8,9 @@ import it.uniroma3.siw.model.Fotografia;
 @Repository
 public interface FotografiaRepository extends JpaRepository<Fotografia, Long>{
 
-	public Fotografia findByPrimaryKey(Long id);
+	Fotografia findByPrimaryKey(Long id);
 
-	//public void update(Fotografia fotografia);
+	//void update(Fotografia fotografia);
 	
 
 }

@@ -1,5 +1,6 @@
 package it.uniroma3.siw.service;
 
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -35,8 +36,13 @@ public class FotografiaService {
 		fotografiaRepository.delete(fotografia);
 	}
 	
-	public void salvaFoto(MultipartFile imageFile, Fotografia fotografia) throws Exception{
-		byte[] bytes = imageFile.getBytes();
+	public void salvaFoto(MultipartFile imageFile, Fotografia fotografia){
+		byte[] bytes = new byte[0];
+		try {
+			bytes = imageFile.getBytes();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 		fotografia.setImg(bytes);
 		fotografiaRepository.save(fotografia);
 	}

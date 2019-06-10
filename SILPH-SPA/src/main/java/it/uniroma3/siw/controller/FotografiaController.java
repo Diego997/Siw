@@ -15,12 +15,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.ServletRequestDataBinder;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.InitBinder;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import it.uniroma3.siw.model.Fotografia;
@@ -41,13 +36,18 @@ public class FotografiaController {
 		binder.addValidators(fotografiaValidator);
 	}
 
+	@RequestMapping("/images")
+	public String showFotografie(Model model){
+		model.addAttribute("fotografia", fotografiaService.tutti());
+		return "allfoto";
+	}
 	@GetMapping("/fotografia/{id}")
-	public String showProductImage(@PathVariable Long id, Model model) {
+	public String showFotografiaImage(@PathVariable Long id, Model model) {
 
 	Fotografia fotografia = fotografiaService.cercaPerId(id);
 
-        model.addAttribute("fotografia", Base64.getEncoder().encodeToString(fotografia.getImg()));
-        return "foto";
+		model.addAttribute("fotografia", fotografia);
+		return "foto";
 	}
 	
 	@GetMapping("/uploadImage")
@@ -57,16 +57,16 @@ public class FotografiaController {
 	}
 
 	@PostMapping("/uploadImage")
-	public String uploadImage(@RequestParam("imageFile") MultipartFile imageFile, @Valid @ModelAttribute("fotografia") Fotografia fotografia, Model model, BindingResult bindingResult ) throws Exception {
+	public String uploadImage(@RequestParam("imgFile") MultipartFile imageFile, Model model, @Valid @ModelAttribute("fotografia") Fotografia fotografia, BindingResult bindingResult ){
 		this.fotografiaValidator.validate(fotografia, bindingResult);
-		if (!bindingResult.hasErrors()) {
-
+		if (!bindingResult.hasErrors() && imageFile.getSize()>0) {
             fotografiaService.salvaFoto(imageFile, fotografia);
-            model.addAttribute("fotografia", Base64.getEncoder().encodeToString(fotografia.getImg()));
+            model.addAttribute("fotografia", fotografia);
             return "foto";
         }
-		else
-		    return "start";
+		else {
+			return "start";
+		}
 	}
 
 }
