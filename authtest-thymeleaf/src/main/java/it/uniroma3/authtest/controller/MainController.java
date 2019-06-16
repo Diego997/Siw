@@ -1,18 +1,12 @@
 package it.uniroma3.authtest.controller;
 
-import org.springframework.core.io.ClassPathResource;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.ViewResolver;
-import org.springframework.web.servlet.view.JstlView;
-
-import java.util.Map;
-
 /**
  * The MainController is a Spring Boot Controller to handle
  * the generic interactions with the home pages, and that do not refer to specific entities
@@ -32,9 +26,14 @@ public class MainController {
      */
     @RequestMapping(value = { "/", "/index" }, method = RequestMethod.GET)
     public String index(Model model) {
-        return "home";
+        return "index";
     }
 
+	@GetMapping(value="/login")
+	public String login(){
+		return "login";
+	}
+	
     /**
      * This method is called when a GET request is sent by the user to URL "/welcome".
      * This method prepares and dispatches the welcome view.

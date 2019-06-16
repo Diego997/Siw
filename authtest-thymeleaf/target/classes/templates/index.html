@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:th="http://www.thymeleaf.org"
+  xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<title>Silph-SPA</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="style.css">
+<script defer
+	src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+	<div class="mediumline"></div>
+	<div class="smallline"></div>
+	<div>
+		<div class="header">
+			<div class="search-box">
+				<input type="text" name="" class="search-txt"
+					placeholder="Type to search" /> <a class="search-btn" href="#">
+					<i class="fas fa-search"></i>
+				</a>
+			</div>
+			<div class="button">
+				<a th:href="@{/login}">
+				<button type="button">Login Admin</button>
+				</a>
+			</div>
+		</div>
+		<div class="smallline"></div>
+		<div class="line"></div>
+
+		<!-- Main -->
+		<section id="main">
+			<!-- Items -->
+			<div class="items">
+
+				<div class="item intro span-2">
+					<h1>SILPH</h1>
+					<p>
+						Photos Photographer and Art<br />
+				</div>
+				
+				<span th:each="img : ${images}"></span>
+				<article class="item thumb span-1">
+					<h2>Singapore</h2>
+					<a href="images/fulls/1.jpg" class="image"><img
+						src="images/thumbs/1.jpg" alt=""></a>
+				</article>
+
+				<article class="item thumb span-2">
+					<h2>Ad Infinitum</h2>
+					<a href="images/fulls/2.jpg" class="image"><img
+						src="images/thumbs/2.jpg" alt=""></a>
+				</article>
+
+				<article class="item thumb span-1">
+					<h2>Different.</h2>
+					<a href="images/fulls/3.jpg" class="image"><img
+						src="images/thumbs/3.jpg" alt=""></a>
+				</article>
+
+				<article class="item thumb span-1">
+					<h2>Elysium</h2>
+					<a href="images/fulls/4.jpg" class="image"><img
+						src="images/thumbs/4.jpg" alt=""></a>
+				</article>
+
+				<article class="item thumb span-3">
+					<h2>Kingdom of the Wind</h2>
+					<a href="images/fulls/5.jpg" class="image"><img
+						src="images/thumbs/5.jpg" alt=""></a>
+				</article>
+
+				<article class="item thumb span-1">
+					<h2>The Pursuit</h2>
+					<a href="images/fulls/6.jpg" class="image"><img
+						src="images/thumbs/6.jpg" alt=""></a>
+				</article>
+
+				<article class="item thumb span-2">
+					<h2>Boundless</h2>
+					<a href="images/fulls/7.jpg" class="image"><img
+						src="images/thumbs/7.jpg" alt=""></a>
+				</article>
+
+				<article class="item thumb span-2">
+					<h2>The Spectators</h2>
+					<a href="images/fulls/8.jpg" class="image"><img
+						src="images/thumbs/8.jpg" alt=""></a>
+				</article>
+
+			</div>
+
+			<!-- Items -->
+			<div class="items">
+
+				<article class="item thumb span-3">
+					<h2>Kingdom of the Wind</h2>
+					<a href="images/fulls/5.jpg" class="image"><img
+						src="images/thumbs/5.jpg" alt=""></a>
+				</article>
+				<article class="item thumb span-1">
+					<h2>The Pursuit</h2>
+					<a href="images/fulls/6.jpg" class="image"><img
+						src="images/thumbs/6.jpg" alt=""></a>
+				</article>
+				<article class="item thumb span-2">
+					<h2>Boundless</h2>
+					<a href="images/fulls/7.jpg" class="image"><img
+						src="images/thumbs/7.jpg" alt=""></a>
+				</article>
+				<article class="item thumb span-2">
+					<h2>The Spectators</h2>
+					<a href="images/fulls/8.jpg" class="image"><img
+						src="images/thumbs/8.jpg" alt=""></a>
+				</article>
+				<article class="item thumb span-1">
+					<h2>You really got me</h2>
+					<a href="images/fulls/1.jpg" class="image"><img
+						src="images/thumbs/1.jpg" alt=""></a>
+				</article>
+				<article class="item thumb span-2">
+					<h2>Ad Infinitum</h2>
+					<a href="images/fulls/2.jpg" class="image"><img
+						src="images/thumbs/2.jpg" alt=""></a>
+				</article>
+				<article class="item thumb span-1">
+					<h2>Different.</h2>
+					<a href="images/fulls/3.jpg" class="image"><img
+						src="images/thumbs/3.jpg" alt=""></a>
+				</article>
+				<article class="item thumb span-2">
+					<h2>Kingdom of the Wind</h2>
+					<a href="images/fulls/5.jpg" class="image"><img
+						src="images/thumbs/5.jpg" alt=""></a>
+				</article>
+				<article class="item thumb span-1">
+					<h2>Elysium</h2>
+					<a href="images/fulls/4.jpg" class="image"><img
+						src="images/thumbs/4.jpg" alt=""></a>
+				</article>
+
+			</div>
+
+		</section>
+
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.poptrox.min.js"></script>
+	<script src="js/browser.min.js"></script>
+	<script src="js/breakpoints.min.js"></script>
+	<script src="js/util.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

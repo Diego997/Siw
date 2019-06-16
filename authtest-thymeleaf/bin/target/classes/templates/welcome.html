@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<h1>Welcome, <span th:utext="${username}"></span>!</h1>
+
+<h3 th:if="${role} == 'ADMIN'">
+    <a href="/admin">Visit the admin page</a>
+</h3>
+
+<h5><a href="/logout">Logout</a></h5>
+
+</body>
+</html>
