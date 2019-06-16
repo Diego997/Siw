@@ -1,7 +1,12 @@
-package it.uniroma3.siw.model;
+package it.uniroma3.authtest.model;
 
 import javax.persistence.*;
 
+/**
+ * A User is a generic person who can use our application.
+ * Subclasses of User include Admin and Customer.
+ *
+ */
 @Entity
 @Table(name="funzionario")
 public class Funzionario {
@@ -11,13 +16,13 @@ public class Funzionario {
   @Column(name = "id", columnDefinition = "serial", nullable = false)
   private Long id;
   @Column(name = "email", unique=true)
-	private String email;
+  private String email;
   @Column(name = "pwd")
-	private String pwd;
+  private String pwd;
   @Column(name="nome")
-	private String nome;
+  private String nome;
   @Column(name="cognome")
-	private String cognome;
+  private String cognome;
   @Column(name = "role")
   private String role;
 
@@ -58,22 +63,22 @@ public class Funzionario {
 
 
   public String getEmail() {
-		return email;
-	}
-	public void setEmail(String email) {
-		this.email = email;
-	}
-	public String getNome() {
-		return nome;
-	}
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-	public String getCognome() {
-		return cognome;
-	}
-	public void setCognome(String cognome) {
-		this.cognome = cognome;
-	}
-	
+    return email;
+  }
+  public void setEmail(String email) {
+    this.email = email;
+  }
+  public String getNome() {
+    return nome;
+  }
+  public void setNome(String nome) {
+    this.nome = nome;
+  }
+  public String getCognome() {
+    return cognome;
+  }
+  public void setCognome(String cognome) {
+    this.cognome = cognome;
+  }
+
 }
