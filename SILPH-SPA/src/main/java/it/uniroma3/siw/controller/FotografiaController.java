@@ -15,12 +15,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.ServletRequestDataBinder;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.InitBinder;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import it.uniroma3.siw.model.Fotografia;
@@ -41,13 +36,17 @@ public class FotografiaController {
 		binder.addValidators(fotografiaValidator);
 	}
 
+	@RequestMapping("/images")
+	public String showFotografie(Model model){
+		model.addAttribute("fotografia", fotografiaService.tutti());
+		return "allfoto";
+	}
 	@GetMapping("/fotografia/{id}")
 	public String showFotografiaImage(@PathVariable Long id, Model model) {
 
 	Fotografia fotografia = fotografiaService.cercaPerId(id);
 
 		model.addAttribute("fotografia", fotografia);
-		model.addAttribute("img", Base64.getEncoder().encodeToString(fotografia.getImg()));
 		return "foto";
 	}
 	
@@ -63,7 +62,6 @@ public class FotografiaController {
 		if (!bindingResult.hasErrors() && imageFile.getSize()>0) {
             fotografiaService.salvaFoto(imageFile, fotografia);
             model.addAttribute("fotografia", fotografia);
-			model.addAttribute("img", Base64.getEncoder().encodeToString(fotografia.getImg()));
             return "foto";
         }
 		else {
