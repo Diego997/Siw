@@ -133,7 +133,7 @@ h1 {
 }
 
 .upload+label {
-	margin-left:110px;
+	margin-left: 110px;
 	width: 200px;
 	height: 40px;
 	font-size: 1em;
@@ -147,6 +147,7 @@ h1 {
 	border-radius: 10px;
 	box-shadow: 0px 3px 0px #333;
 	transition: 150ms;
+	width: 200px;
 }
 
 .upload:focus+label, .upload+label:hover {
@@ -172,7 +173,8 @@ h1 {
 	column-count: 2;
 }
 
-.loginbox input[type="text"], .loginbox input[type="password"], .loginbox select {
+.loginbox input[type="text"], .loginbox input[type="password"],
+	.loginbox select {
 	border: 0;
 	background: none;
 	display: block;
@@ -206,6 +208,7 @@ h1 {
 	border-radius: 3px;
 	transition: 0.25s;
 	cursor: pointer;
+	font-size: 20px;
 }
 
 .loginbox input[type="submit"]:hover {
@@ -220,6 +223,7 @@ h1 {
 .central h3 {
 	text-align: center;
 }
+
 
 textarea {
 	width: 50%;
