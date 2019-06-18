@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Funzionario</title>
+<link rel="stylesheet" href="css/funzionario.css" />
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/funzionario.js"></script>
+
+
+</head>
+<body>
+</body>
+
+<div class="mediumline"></div>
+<div class="smallline"></div>
+<div class="header">
+	<h1 th:text="${'Benvenuto '+funzionario.nome}">Benvenuto Admin</h1>
+	<div>
+		<a th:href="@{/logout}">
+			<button class="btnlogout" type="button">Logout</button>
+		</a>
+	</div>
+</div>
+<div class="smallline"></div>
+<div class="navbar">
+	<a th:href="@{/}">Home</a> <a th:href="@{/admin}">Richieste</a>
+	<div class="dropdown">
+		<button class="dropbtn">
+			Album <i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-content">
+			<a href="#">Aggiungi Album</a> <a href="#">Modifica Album</a> <a
+				href="#">Rimuovi Album</a>
+		</div>
+	</div>
+	<div class="dropdown">
+		<button class="dropbtn">
+			Fotografo <i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-content">
+			<a th:href="@{/addfotografo}">Aggiungi Fotografo</a> <a href="#">Modifica Fotografo</a>
+			<a href="#">Rimuovi Fotografo</a>
+		</div>
+	</div>
+	<div class="dropdown">
+		<button class="dropbtn">
+			Fotografia <i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-content">
+			<a href="#">Aggiungi Fotografo</a> <a href="#">Modifica Fotografo</a>
+			<a href="#">Rimuovi Fotografo</a>
+		</div>
+	</div>
+</div>
+
+
+<th:block th:if="${#lists.isEmpty(richieste)}">
+	<h1 th:text="'~ Al momento non ci sono richieste in sospeso ~'">No
+		richieste</h1>
+</th:block>
+
+<th:block th:unless="${#lists.isEmpty(richieste)}">
+	<th:block th:each="richiesta : ${richieste}">
+		<button class="accordion"
+			th:text="${'Richiesta #'+richiesta.primaryKey}">Richiesta</button>
+		<div class="panel">
+			<p
+				th:text="${'Nome: '+richiesta.cliente.nome +' Cognome: '+richiesta.cliente.cognome +' Email: '+richiesta.cliente.email}">
+				Lorem ipsum..<br>
+			</p>
+			<button class="btn success">Gestisci</button>
+		</div>
+	</th:block>
+</th:block>
+
+<script>
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+
+	for (i = 0; i < acc.length; i++) {
+		acc[i].addEventListener("click", function() {
+			/* Toggle between adding and removing the "active" class,
+			to highlight the button that controls the panel */
+			this.classList.toggle("active");
+
+			/* Toggle between hiding and showing the active panel */
+			var panel = this.nextElementSibling;
+			if (panel.style.display === "block") {
+				panel.style.display = "none";
+			} else {
+				panel.style.display = "block";
+			}
+		});
+	}
+</script>
+</body>
+</html>
