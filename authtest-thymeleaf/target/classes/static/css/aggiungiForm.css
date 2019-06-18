@@ -133,12 +133,8 @@ h1 {
 }
 
 .upload+label {
-<<<<<<< HEAD
 	margin-left: auto;
 	margin-right: auto;
-=======
-	margin-left: 110px;
->>>>>>> 9b463f6dd31ed3dfb5b5361b8eb541325c1c630c
 	width: 200px;
 	height: 40px;
 	font-size: 1em;
