@@ -14,8 +14,8 @@ public class Richiesta {
 	
 	@OneToOne
 	private Cliente cliente;
-	@OneToOne
-	private Funzionario funzionario;
+
+	private boolean checked;
 	
 	@OneToMany(targetEntity = Fotografia.class)
 	private List<Fotografia> fotografie;
@@ -36,20 +36,20 @@ public class Richiesta {
 		this.cliente = cliente;
 	}
 
-	public Funzionario getFunzionario() {
-		return funzionario;
-	}
-
-	public void setFunzionario(Funzionario funzionario) {
-		this.funzionario = funzionario;
-	}
-
 	public List<Fotografia> getFotografie() {
 		return fotografie;
 	}
 
 	public void setFotografie(List<Fotografia> fotografie) {
 		this.fotografie = fotografie;
+	}
+
+	public boolean isChecked() {
+		return checked;
+	}
+
+	public void setChecked(boolean checked) {
+		this.checked = checked;
 	}
 	
 }

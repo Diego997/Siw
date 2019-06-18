@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import it.uniroma3.authtest.service.FotografiaService;
+import it.uniroma3.authtest.service.FunzionarioService;
+import it.uniroma3.authtest.service.RichiestaService;
 /**
  * The MainController is a Spring Boot Controller to handle
  * the generic interactions with the home pages, and that do not refer to specific entities
@@ -19,6 +21,12 @@ public class MainController {
 
 	@Autowired
 	private FotografiaService fotografiaService;
+	
+	@Autowired
+	private RichiestaService richiestaService;
+	
+	@Autowired
+	private FunzionarioService funzionarioService;
 
 	public MainController() {
 		super();
@@ -43,22 +51,6 @@ public class MainController {
 	}
 
 	/**
-	 * This method is called when a GET request is sent by the user to URL "/welcome".
-	 * This method prepares and dispatches the welcome view.
-	 *
-	 * @return the name of the welcome view
-	 */
-	@RequestMapping(value = { "/welcome" }, method = RequestMethod.GET)
-	public String welcome(Model model) {
-		UserDetails details = (UserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-		String role = details.getAuthorities().iterator().next().getAuthority();     // get first authority
-		model.addAttribute("username", details.getUsername());
-		model.addAttribute("role", role);
-
-		return "welcome";
-	}
-
-	/**
 	 * This method is called when a GET request is sent by the user to URL "/admin".
 	 * This method prepares and dispatches the admin view.
 	 *
@@ -68,9 +60,11 @@ public class MainController {
 	public String admin(Model model) {
 		UserDetails details = (UserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
 		String role = details.getAuthorities().iterator().next().getAuthority();    // get first authority
-		model.addAttribute("username", details.getUsername());
+		String email = details.getUsername();
+		model.addAttribute("username", email);
+		model.addAttribute("funzionario", funzionarioService.funzionarioPerEmail(details.getUsername()));
 		model.addAttribute("role", role);
-
+		model.addAttribute("richieste", richiestaService.tutti());
 		return "admin";
 	}
 }

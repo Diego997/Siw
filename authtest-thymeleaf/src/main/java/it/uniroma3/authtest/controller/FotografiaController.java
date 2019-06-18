@@ -1,12 +1,6 @@
 package it.uniroma3.authtest.controller;
 
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Base64;
-
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -42,12 +36,12 @@ public class FotografiaController {
 	@GetMapping("/fotografia/{id}")
 	public String showFotografiaImage(@PathVariable Long id, Model model) {
 
-	Fotografia fotografia = fotografiaService.cercaPerId(id);
+		Fotografia fotografia = fotografiaService.cercaPerId(id);
 
 		model.addAttribute("fotografia", fotografia);
 		return "foto";
 	}
-	
+
 	@GetMapping("/uploadImage")
 	public String addFotografia(Model model) {
 		model.addAttribute("fotografia", new Fotografia());
@@ -55,13 +49,13 @@ public class FotografiaController {
 	}
 
 	@PostMapping("/uploadImage")
-	public String uploadImage(@RequestParam("imgFile") MultipartFile imageFile, Model model, @Valid @ModelAttribute("fotografia") Fotografia fotografia, BindingResult bindingResult ){
+	public String uploadImage(@RequestParam("imgFile") MultipartFile imageFile, @Valid @ModelAttribute("fotografia") Fotografia fotografia, Model model, BindingResult bindingResult ){
 		this.fotografiaValidator.validate(fotografia, bindingResult);
 		if (!bindingResult.hasErrors() && imageFile.getSize()>0) {
-            fotografiaService.salvaFoto(imageFile, fotografia);
-            model.addAttribute("fotografia", fotografia);
-            return "foto";
-        }
+			fotografiaService.salvaFoto(imageFile, fotografia);
+			model.addAttribute("fotografia", fotografia);
+			return "foto";
+		}
 		else {
 			return "addfoto";
 		}

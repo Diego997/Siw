@@ -47,80 +47,60 @@ h1 {
 	padding: 10px;
 	height: 120%;
 }
-/*
-.button {
+
+.btnlogout {
+	position: absolute;
+	top: 9.5%;
+	right: 1%;
+}
+
+.btnlogout {
 	background: #696969;
-	border: 1px solid #000000;
 	color: #ccc;
-	width: 300px;
-	height: 60px;
-	text-align: center;
-	text-decoration: none;
-	display: block;
-	font-size: 24px;
+	width: 200px;
+	height: 40px;
+	border: 1px solid #000000;
+	font-size: 16px;
 	font-weight: bold;
-	margin: 4px 2px;
-	border-radius: 5px;
-	-webkit-transition-duration: 0.4s; 
-	transition-duration: 0.4s;
-	cursor: pointer;
+	border-radius: 4px;
+	transition: .6s;
+	overflow: hidden;
 }
 
-.button1 {
-	background-color: #696969;
-	color: #ccc;
-	border: 1px solid #000000;
+.btnlogout:focus {
+	outline: none;
 }
 
-.button1:hover {
-	background-color: #000000;
-	color: #ccc;
+.btnlogout:before {
+	content: '';
+	display: block;
+	position: absolute;
+	background: rgba(255, 255, 255, .5);
+	width: 60px;
+	heigth: 100%;
+	left: 0;
+	top: 0;
+	opacity: .5s;
+	filter: blur(30px);
+	transform: translate(-100px) scaleX(-15deg);
 }
 
-.button2 {
-	background: #696969;
-	color: #ccc;
-	border: 1px solid #000000;
+.btnlogout:hover {
+	background: #000000;
+	cursor: poiner;
 }
 
-.button2:hover {
-	background-color: #000000;
-	color: #ccc;
+.btnlogout:hover:before {
+	transform: translateX(300px) skewX(-15deg);
+	opacity: .6;
+	transition: .7s;
 }
 
-.button3 {
-	background: #696969;
-	color: #ccc;
-	border: 1px solid #000000;
+.btnlogout:hover:after {
+	transform: translateX(300px) skewX(-15deg);
+	opacity: 1;
+	transition: .7s;
 }
-
-.button3:hover {
-	background-color: #000000;
-	color: #ccc;
-}
-
-.button4 {
-	background: #696969;
-	color: #ccc;
-	border: 1px solid #000000;
-}
-
-.button4:hover {
-	background-color: #000000;
-	color: #ccc;
-}
-
-.button5 {
-	background: #696969;
-	color: #ccc;
-	border: 1px solid #000000;
-}
-
-.button5:hover {
-	background-color: #000000;
-	color: #ccc;
-}
-*/
 
 /* Navbar container */
 .navbar {
