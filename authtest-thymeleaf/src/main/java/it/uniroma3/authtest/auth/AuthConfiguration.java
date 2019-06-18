@@ -45,7 +45,7 @@ public class AuthConfiguration extends WebSecurityConfigurerAdapter {
 		http
 		// authorization paragraph: we are going to define here WHO can access WHAT pages
 		.authorizeRequests()
-
+		
 		// everyone (authenticated or not) can access the home page
 		.antMatchers(HttpMethod.GET, "/", "/index").permitAll()
 		// only admin can access the admin page
@@ -68,7 +68,7 @@ public class AuthConfiguration extends WebSecurityConfigurerAdapter {
 		// logout paragraph: we are going to define here how to logout
 		.and().logout().permitAll();
 
-
+		http.csrf().disable();
 	}
 
 	@Autowired

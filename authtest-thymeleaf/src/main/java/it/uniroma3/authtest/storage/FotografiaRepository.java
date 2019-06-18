@@ -8,6 +8,8 @@ import org.springframework.stereotype.Repository;
 public interface FotografiaRepository extends JpaRepository<Fotografia, Long>{
 
 	Fotografia findByPrimaryKey(Long id);
+	
+	Fotografia findByNome(String n);
 
 	//void update(Fotografia fotografia);
 	

@@ -8,6 +8,6 @@
 
 
 <p th:text="${fotografia.nome}">Static content</p>
-<img th:src="${fotografia.img} == null ? _ : @{'data:image/png;base64,'+*{T(org.springframework.util.Base64Utils).encodeToString(fotografia.img)}}">
+<img th:src="${fotografia.img} == null ? _ : @{'data:image/fotografia.descrizione;base64,'+*{T(org.springframework.util.Base64Utils).encodeToString(fotografia.img)}}">
 </body>
 </html>

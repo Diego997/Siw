@@ -9,8 +9,12 @@
 	<h1>
 		Greetings, my Admin <span th:utext="${username}"></span>!
 	</h1>
+	<a th:href="@{/uploadImage}">upload Image</a><br>
 	<form th:action="@{/logout}" method="post">
 		<input type="submit" value="Sign Out" />
+	</form>
+	<form th:action="@{/}" method="geet">
+		<input type="submit" value="Home" />
 	</form>
 </body>
 </html>

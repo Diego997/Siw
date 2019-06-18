@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml"
-  xmlns:th="http://www.thymeleaf.org"
-  xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
 <title>Silph-SPA</title>
 <meta charset="utf-8" />
@@ -23,11 +23,17 @@
 					<i class="fas fa-search"></i>
 				</a>
 			</div>
-			<div class="button">
-				<a th:href="@{/login}">
-				<button type="button">Login Admin</button>
+			<div class="button" sec:authorize="isAuthenticated()">
+				<a th:href="@{/admin}">
+					<button type="button">Admin Page</button>
 				</a>
 			</div>
+			<div class="button" sec:authorize="isAnonymous()">
+				<a th:href="@{/login}">
+					<button type="button">Login Admin</button>
+				</a>
+			</div>
+
 		</div>
 		<div class="smallline"></div>
 		<div class="line"></div>
@@ -42,107 +48,33 @@
 					<p>
 						Photos Photographer and Art<br />
 				</div>
-				
-				<span th:each="img : ${images}"></span>
-				<article class="item thumb span-1">
-					<h2>Singapore</h2>
-					<a href="images/fulls/1.jpg" class="image"><img
-						src="images/thumbs/1.jpg" alt=""></a>
-				</article>
-
-				<article class="item thumb span-2">
-					<h2>Ad Infinitum</h2>
-					<a href="images/fulls/2.jpg" class="image"><img
-						src="images/thumbs/2.jpg" alt=""></a>
-				</article>
-
-				<article class="item thumb span-1">
-					<h2>Different.</h2>
-					<a href="images/fulls/3.jpg" class="image"><img
-						src="images/thumbs/3.jpg" alt=""></a>
-				</article>
-
-				<article class="item thumb span-1">
-					<h2>Elysium</h2>
-					<a href="images/fulls/4.jpg" class="image"><img
-						src="images/thumbs/4.jpg" alt=""></a>
-				</article>
-
-				<article class="item thumb span-3">
-					<h2>Kingdom of the Wind</h2>
-					<a href="images/fulls/5.jpg" class="image"><img
-						src="images/thumbs/5.jpg" alt=""></a>
-				</article>
-
-				<article class="item thumb span-1">
-					<h2>The Pursuit</h2>
-					<a href="images/fulls/6.jpg" class="image"><img
-						src="images/thumbs/6.jpg" alt=""></a>
-				</article>
-
-				<article class="item thumb span-2">
-					<h2>Boundless</h2>
-					<a href="images/fulls/7.jpg" class="image"><img
-						src="images/thumbs/7.jpg" alt=""></a>
-				</article>
-
-				<article class="item thumb span-2">
-					<h2>The Spectators</h2>
-					<a href="images/fulls/8.jpg" class="image"><img
-						src="images/thumbs/8.jpg" alt=""></a>
-				</article>
-
+				<th:block th:each="fotografia,iterStat : ${fotografie1}">
+					<article
+						th:class="${iterStat.odd}? 'item thumb span-1' : 'item thumb span-2'">
+						<h2 th:text="${fotografia.nome}">img name</h2>
+						<a
+							th:href="${fotografia.img} == null ? _ : @{'data:image/png;base64,'+*{T(org.springframework.util.Base64Utils).encodeToString(fotografia.img)}}"
+							class="image"><img
+							th:src="${fotografia.thumb} == null ? _ : @{'data:image/png;base64,'+*{T(org.springframework.util.Base64Utils).encodeToString(fotografia.thumb)}}"
+							alt=""></a>
+					</article>
+				</th:block>
 			</div>
+
 
 			<!-- Items -->
 			<div class="items">
-
-				<article class="item thumb span-3">
-					<h2>Kingdom of the Wind</h2>
-					<a href="images/fulls/5.jpg" class="image"><img
-						src="images/thumbs/5.jpg" alt=""></a>
-				</article>
-				<article class="item thumb span-1">
-					<h2>The Pursuit</h2>
-					<a href="images/fulls/6.jpg" class="image"><img
-						src="images/thumbs/6.jpg" alt=""></a>
-				</article>
-				<article class="item thumb span-2">
-					<h2>Boundless</h2>
-					<a href="images/fulls/7.jpg" class="image"><img
-						src="images/thumbs/7.jpg" alt=""></a>
-				</article>
-				<article class="item thumb span-2">
-					<h2>The Spectators</h2>
-					<a href="images/fulls/8.jpg" class="image"><img
-						src="images/thumbs/8.jpg" alt=""></a>
-				</article>
-				<article class="item thumb span-1">
-					<h2>You really got me</h2>
-					<a href="images/fulls/1.jpg" class="image"><img
-						src="images/thumbs/1.jpg" alt=""></a>
-				</article>
-				<article class="item thumb span-2">
-					<h2>Ad Infinitum</h2>
-					<a href="images/fulls/2.jpg" class="image"><img
-						src="images/thumbs/2.jpg" alt=""></a>
-				</article>
-				<article class="item thumb span-1">
-					<h2>Different.</h2>
-					<a href="images/fulls/3.jpg" class="image"><img
-						src="images/thumbs/3.jpg" alt=""></a>
-				</article>
-				<article class="item thumb span-2">
-					<h2>Kingdom of the Wind</h2>
-					<a href="images/fulls/5.jpg" class="image"><img
-						src="images/thumbs/5.jpg" alt=""></a>
-				</article>
-				<article class="item thumb span-1">
-					<h2>Elysium</h2>
-					<a href="images/fulls/4.jpg" class="image"><img
-						src="images/thumbs/4.jpg" alt=""></a>
-				</article>
-
+				<th:block th:each="fotografia,iterStat : ${fotografie2}">
+					<article
+						th:class="${iterStat.odd}? 'item thumb span-3' : 'item thumb span-1'">
+						<h2 th:text="${fotografia.nome}">img name</h2>
+						<a
+							th:href="${fotografia.img} == null ? _ : @{'data:image/png;base64,'+*{T(org.springframework.util.Base64Utils).encodeToString(fotografia.img)}}"
+							class="image"><img
+							th:src="${fotografia.thumb} == null ? _ : @{'data:image/png;base64,'+*{T(org.springframework.util.Base64Utils).encodeToString(fotografia.thumb)}}"
+							alt=""></a>
+					</article>
+				</th:block>
 			</div>
 
 		</section>
