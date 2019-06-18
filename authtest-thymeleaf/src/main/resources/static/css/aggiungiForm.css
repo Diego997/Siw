@@ -48,6 +48,60 @@ h1 {
 	height: 120%;
 }
 
+.btnlogout {
+	position: absolute;
+	top: 9.5%;
+	right: 1%;
+}
+
+.btnlogout {
+	background: #696969;
+	color: #ccc;
+	width: 200px;
+	height: 40px;
+	border: 1px solid #000000;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 4px;
+	transition: .6s;
+	overflow: hidden;
+}
+
+.btnlogout:focus {
+	outline: none;
+}
+
+.btnlogout:before {
+	content: '';
+	display: block;
+	position: absolute;
+	background: rgba(255, 255, 255, .5);
+	width: 60px;
+	heigth: 100%;
+	left: 0;
+	top: 0;
+	opacity: .5s;
+	filter: blur(30px);
+	transform: translate(-100px) scaleX(-15deg);
+}
+
+.btnlogout:hover {
+	background: #000000;
+	cursor: poiner;
+}
+
+.btnlogout:hover:before {
+	transform: translateX(300px) skewX(-15deg);
+	opacity: .6;
+	transition: .7s;
+}
+
+.btnlogout:hover:after {
+	transform: translateX(300px) skewX(-15deg);
+	opacity: 1;
+	transition: .7s;
+}
+
 /* Navbar container */
 .navbar {
 	overflow: hidden;

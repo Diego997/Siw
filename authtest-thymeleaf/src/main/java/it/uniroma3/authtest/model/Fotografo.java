@@ -15,6 +15,10 @@ public class Fotografo {
 	private String nome;
 	@Column
 	private String cognome;
+	@Column
+	private String descrizione;
+	@Column(name="img")
+	private byte[] img;
 	@OneToMany(targetEntity = Album.class)
 	private List<Album> album;
 	
@@ -41,6 +45,18 @@ public class Fotografo {
 	}
 	public void setAlbum(List<Album> album) {
 		this.album = album;
+	}
+	public String getDescrizione() {
+		return descrizione;
+	}
+	public void setDescrizione(String descrizione) {
+		this.descrizione = descrizione;
+	}
+	public byte[] getImg() {
+		return img;
+	}
+	public void setImg(byte[] img) {
+		this.img = img;
 	}
 	
 }

@@ -3,7 +3,7 @@
 	xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
-<title>Funzionario</title>
+<title>Richieste</title>
 <link rel="stylesheet" href="css/funzionario.css" />
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="js/funzionario.js"></script>
@@ -31,8 +31,9 @@
 			Album <i class="fa fa-caret-down"></i>
 		</button>
 		<div class="dropdown-content">
-			<a href="#">Aggiungi Album</a> <a href="#">Modifica Album</a> <a
-				href="#">Rimuovi Album</a>
+			<a th:href="@{/addalbum}">Aggiungi Album</a> <a
+				th:href="@{/editalbum}">Modifica Album</a> <a
+				th:href="@{/deletealbum}">Rimuovi Album</a>
 		</div>
 	</div>
 	<div class="dropdown">
@@ -40,8 +41,9 @@
 			Fotografo <i class="fa fa-caret-down"></i>
 		</button>
 		<div class="dropdown-content">
-			<a th:href="@{/addfotografo}">Aggiungi Fotografo</a> <a href="#">Modifica Fotografo</a>
-			<a href="#">Rimuovi Fotografo</a>
+			<a th:href="@{/addfotografo}">Aggiungi Fotografo</a> <a
+				th:href="@{/editfotografo}">Modifica Fotografo</a> <a
+				th:href="@{/deletefotografo}">Rimuovi Fotografo</a>
 		</div>
 	</div>
 	<div class="dropdown">
@@ -49,8 +51,9 @@
 			Fotografia <i class="fa fa-caret-down"></i>
 		</button>
 		<div class="dropdown-content">
-			<a href="#">Aggiungi Fotografo</a> <a href="#">Modifica Fotografo</a>
-			<a href="#">Rimuovi Fotografo</a>
+			<a th:href="@{/addfotografia}">Aggiungi Fotografia</a> <a
+				th:href="@{/editfotografia}">Modifica Fotografia</a> <a
+				th:href="@{/deletefotografia}">Rimuovi Fotografia</a>
 		</div>
 	</div>
 </div>
