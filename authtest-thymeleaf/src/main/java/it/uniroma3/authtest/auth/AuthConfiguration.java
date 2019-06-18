@@ -60,7 +60,7 @@ public class AuthConfiguration extends WebSecurityConfigurerAdapter {
 		.loginPage("/login")
 		.permitAll()
 		// after login is successful, redirect to /welcome page
-		.defaultSuccessUrl("/welcome")
+		.defaultSuccessUrl("/admin")
 		//NOTE: we are using the default configuration for login,
 		// meaning that the /login url is automatically mapped to auto-generated page.
 		// for our own page, we would need to use loginPage()
