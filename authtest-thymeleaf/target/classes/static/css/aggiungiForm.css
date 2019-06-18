@@ -133,7 +133,8 @@ h1 {
 }
 
 .upload+label {
-	margin-left:175px;
+	margin-left: auto;
+	margin-right: auto;
 	width: 200px;
 	height: 40px;
 	font-size: 1em;
@@ -172,7 +173,8 @@ h1 {
 	column-count: 2;
 }
 
-.loginbox input[type="text"], .loginbox input[type="password"], .loginbox select {
+.loginbox input[type="text"], .loginbox input[type="password"],
+	.loginbox select {
 	border: 0;
 	background: none;
 	display: block;
