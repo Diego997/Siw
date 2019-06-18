@@ -7,7 +7,6 @@ body {
 	font-family: sans-serif;
 }
 
-
 .smallline {
 	width: 100%;
 	height: 10px;
@@ -23,7 +22,7 @@ body {
 .mediumline {
 	width: 100%;
 	height: 20px;
-	background: #000000;
+	background: #333;
 }
 
 .header {
@@ -42,11 +41,11 @@ h1 {
 }
 
 .column {
-  border: 10px solid transparent;
-  float: left;
-  width: 40%;
-  padding: 10px;
-  height: 120%; 
+	border: 10px solid transparent;
+	float: left;
+	width: 40%;
+	padding: 10px;
+	height: 120%;
 }
 
 .button {
@@ -108,7 +107,7 @@ h1 {
 
 .button4:hover {
 	background-color: #000000;
-		color: #ccc;
+	color: #ccc;
 }
 
 .button5 {
@@ -120,4 +119,129 @@ h1 {
 .button5:hover {
 	background-color: #000000;
 	color: #ccc;
+}
+
+
+/* Navbar container */
+.navbar {
+	overflow: hidden;
+	background-color: #333;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+/* Links inside the navbar */
+.navbar a {
+	float: left;
+	font-size: 20px;
+	color: #D3D3D3;
+	text-align: center;
+	padding: 20px 24px;
+	text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+	float: left;
+	overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+	font-weight: bold;
+	font-size: 20px;
+	border: none;
+	outline: none;
+	color: #D3D3D3;
+	padding: 20px 24px;
+	background-color: #333;
+	font-family: sans-serif;
+	/* Important for vertical align on mobile phones */
+	margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+	background-color: #696969;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #D3D3D3;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	font-weight: normal;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+	float: none;
+	color: black;
+	padding: 18px 22px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	font-size: 22px;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: black;
+	color: #ccc;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.accordion {
+  background-color: #ccc;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+.btn {
+  border: 2px solid black;
+  background-color: #ccc;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  left: 88%;
+  top: -5px;
+  border-radius: 24px;
+}
+
+/* Green */
+.success {
+  border-color: #4CAF50;
+  color: green;
+}
+
+.success:hover {
+  background-color: #4CAF50;
+  color: #ccc;
 }
