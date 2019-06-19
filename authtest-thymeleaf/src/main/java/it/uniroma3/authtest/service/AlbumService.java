@@ -8,6 +8,8 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 @Service
 public class AlbumService {
 	@Autowired
@@ -31,5 +33,9 @@ public class AlbumService {
 	@Transactional
 	public boolean alreadyExists(Album album) {
 		return albumRepository.findByPrimaryKey(album.getPrimaryKey()) != null;
+	}
+
+	public void salva(@Valid Album album) {
+		this.albumRepository.save(album);
 	}
 }

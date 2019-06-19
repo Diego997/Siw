@@ -3,6 +3,8 @@ package it.uniroma3.authtest.controller;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -10,8 +12,11 @@ import org.springframework.web.bind.ServletRequestDataBinder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import it.uniroma3.authtest.model.Album;
 import it.uniroma3.authtest.model.Fotografia;
+import it.uniroma3.authtest.service.AlbumService;
 import it.uniroma3.authtest.service.FotografiaService;
+import it.uniroma3.authtest.service.FunzionarioService;
 
 @Controller
 public class FotografiaController {
@@ -22,10 +27,13 @@ public class FotografiaController {
 	@Autowired
 	private FotografiaValidator fotografiaValidator;
 
-	@InitBinder
-	protected void initBinder(final HttpServletRequest request, final ServletRequestDataBinder binder) {
-		binder.addValidators(fotografiaValidator);
-	}
+	@Autowired
+	private FunzionarioService funzionarioService;
+
+	@Autowired
+	private AlbumService albumService;
+
+
 
 	@RequestMapping("/images")
 	public String showFotografie(Model model){
@@ -42,22 +50,29 @@ public class FotografiaController {
 		return "foto";
 	}
 
-	@GetMapping("/uploadImage")
+	@GetMapping("/addfotografia")
 	public String addFotografia(Model model) {
+		UserDetails details = (UserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		model.addAttribute("funzionario", funzionarioService.funzionarioPerEmail(details.getUsername()));
 		model.addAttribute("fotografia", new Fotografia());
-		return "addfoto";
+		model.addAttribute("album", albumService.tutti());
+		return "addfotografia";
 	}
 
-	@PostMapping("/uploadImage")
-	public String uploadImage(@RequestParam("imgFile") MultipartFile imageFile, @Valid @ModelAttribute("fotografia") Fotografia fotografia, Model model, BindingResult bindingResult ){
+	@PostMapping("/addfotografia")
+	public String uploadImage(@Valid @ModelAttribute("fotografia") Fotografia fotografia, @RequestParam("imgFile") MultipartFile imageFile, Model model, BindingResult bindingResult ){
+		UserDetails details = (UserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		model.addAttribute("funzionario", funzionarioService.funzionarioPerEmail(details.getUsername()));
 		this.fotografiaValidator.validate(fotografia, bindingResult);
 		if (!bindingResult.hasErrors() && imageFile.getSize()>0) {
+			Album album = fotografia.getAlbum();
 			fotografiaService.salvaFoto(imageFile, fotografia);
+			albumService.salva(album);
 			model.addAttribute("fotografia", fotografia);
-			return "foto";
+			return "admin";
 		}
 		else {
-			return "addfoto";
+			return "addfotografia";
 		}
 	}
 

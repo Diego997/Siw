@@ -1,5 +1,6 @@
 package it.uniroma3.authtest.service;
 
+import it.uniroma3.authtest.model.Album;
 import it.uniroma3.authtest.model.Fotografia;
 import it.uniroma3.authtest.model.Fotografo;
 import it.uniroma3.authtest.storage.FotografoRepository;
@@ -89,4 +90,14 @@ public class FotografoService {
 
 	    return new Dimension(new_width, new_height);
 	}
+
+	public Fotografo trovaById(Long primaryKey) {
+		return fotografoRepository.getOne(primaryKey);
+		
+	}
+
+	public void salva(Fotografo fotografo) {
+		fotografoRepository.save(fotografo);
+	}
+
 }
