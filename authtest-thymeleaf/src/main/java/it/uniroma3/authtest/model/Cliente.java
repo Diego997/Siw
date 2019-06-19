@@ -16,7 +16,18 @@ public class Cliente {
 	private String nome;
 	@Column
 	private String cognome;
-	
+
+
+
+  private boolean valid;
+  public boolean isValid() {
+    return valid;
+  }
+
+  public void setValid(boolean valid) {
+    this.valid = valid;
+  }
+
 	public String getEmail() {
 		return email;
 	}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://wwww.thymeleaf.org">
+<head>
+  <title></title>
+</head>
+<body>
+<div class="central">
+  <form class="loginbox" th:action="@{/shoppingCartCustomer}"
+        th:object="${cliente}" method="post">
+    <h2>Email</h2>
+    <input type="email" th:field="*{email}">
+    <h2>Nome</h2>
+    <input type="text" th:field="*{nome}"
+           placeholder="Aggiungi Nome Cliente">
+    <h2>Cognome</h2>
+    <input type="text" th:field="*{cognome}"
+           placeholder="Aggiungi Cognome Cliente">
+    <h2>Descrizione</h2>
+    <textarea id="subject" name="subject" placeholder="Scrivi Qualcosa.."
+              style="height: 200px"></textarea>
+    <input type="submit" name="" value="Conferma">
+  </form>
+</div>
+</body>
+</html>
