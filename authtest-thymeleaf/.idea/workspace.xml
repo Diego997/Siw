@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="28cc92e9-6eec-4c0b-8035-96029c213e37" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/controller/RichiestaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/controller/RichiestaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/model/Fotografia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/model/Fotografia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/model/Richiesta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/model/Richiesta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/service/HibernateSearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/service/HibernateSearchService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fotografia.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fotografia.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/MvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/MvcConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/controller/FotografiaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/controller/FotografiaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/controller/RichiestaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/controller/RichiestaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/service/FotografoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/service/FotografoService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/service/HibernateSearchService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/service/HibernateSearchService.class" afterDir="false" />
-    </list>
+    <list default="true" id="28cc92e9-6eec-4c0b-8035-96029c213e37" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,8 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="75" column="98" selection-start-line="75" selection-start-column="98" selection-end-line="75" selection-end-column="98" />
+            <state relative-caret-position="120">
+              <caret line="75" column="12" selection-start-line="75" selection-start-column="12" selection-end-line="75" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -215,7 +201,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="490" />
     <option name="y" value="-10" />
     <option name="width" value="980" />
@@ -420,12 +406,12 @@
       <workItem from="1560693730273" duration="3176000" />
       <workItem from="1560777877740" duration="5000" />
       <workItem from="1560934097068" duration="3339000" />
-      <workItem from="1560950065153" duration="12398000" />
+      <workItem from="1560950065153" duration="12741000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23272000" />
+    <option name="totallyTimeSpent" value="23615000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -440,7 +426,7 @@
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18657719" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18657719" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -450,7 +436,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32841823" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32841823" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3994638" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -865,8 +851,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="75" column="98" selection-start-line="75" selection-start-column="98" selection-end-line="75" selection-end-column="98" />
+        <state relative-caret-position="120">
+          <caret line="75" column="12" selection-start-line="75" selection-start-column="12" selection-end-line="75" selection-end-column="12" />
         </state>
       </provider>
     </entry>
