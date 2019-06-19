@@ -51,7 +51,7 @@ public class AuthConfiguration extends WebSecurityConfigurerAdapter {
                     // only admin can access the admin page
                     .antMatchers(HttpMethod.GET, "/admin").hasAnyAuthority("ADMIN")
 
-                    // all authenticated users can access all the other pages (that is, welcome)
+          // all authenticated users can access all the other pages (that is, welcome)
                     .anyRequest().authenticated()
 
                 // login paragraph: we are going to define here how to login
