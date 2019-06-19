@@ -1,0 +1,47 @@
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	position: relative;
+	max-width: 800px; /* Maximum width */
+	margin: 0 auto; /* Center it */
+}
+
+.container .content {
+	position: absolute; /* Position the background text */
+	bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+	background: rgb(0, 0, 0); /* Fallback color */
+	background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+	color: #f1f1f1; /* Grey text */
+	width: 100%; /* Full width */
+	padding: 5px; /* Some padding */
+}
+
+/* Style buttons */
+.btn {
+  background-color: Black; /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+  border-radius: 10px;
+  margin-left:37%;
+  margin-top:2%;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: #696969;
+}
+
+.sidediv {
+	background-color: #D3D3D3;
+	margin-right: 100%;
+	width: 25%;
+	text-align: right; 
+}
+body{
+	background-color: #333;
+}
