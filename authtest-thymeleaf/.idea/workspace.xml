@@ -1,343 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="28cc92e9-6eec-4c0b-8035-96029c213e37" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/.metadata/.plugins/org.eclipse.ui.ide/dialog_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/java/it/uniroma3/siw/WebConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/java/it/uniroma3/siw/controller/FotografiaValidator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/Funzionario.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/LoginAdmin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/assets/css/funzionario.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/assets/css/images/loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/assets/css/images/overlay.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/assets/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/assets/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/assets/js/breakpoints.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/assets/js/browser.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/assets/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/assets/js/jquery.poptrox.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/assets/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/assets/js/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/assets/sass/libs/_breakpoints.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/assets/sass/libs/_functions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/assets/sass/libs/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/assets/sass/libs/_vars.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/assets/sass/libs/_vendor.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/assets/sass/main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/assets/sass/noscript.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/images/avatar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/images/bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/images/fulls/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/images/fulls/10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/images/fulls/11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/images/fulls/12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/images/fulls/13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/images/fulls/14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/images/fulls/15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/images/fulls/16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/images/fulls/17.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/images/fulls/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/images/fulls/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/images/fulls/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/images/fulls/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/images/fulls/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/images/fulls/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/images/fulls/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/images/fulls/9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/images/thumbs/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/images/thumbs/10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/images/thumbs/11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/images/thumbs/12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/images/thumbs/13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/images/thumbs/14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/images/thumbs/15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/images/thumbs/16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/images/thumbs/17.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/images/thumbs/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/images/thumbs/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/images/thumbs/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/images/thumbs/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/images/thumbs/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/images/thumbs/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/images/thumbs/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/images/thumbs/9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/messages/validation_EN.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/messages/validation_IT.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/templates/allfoto.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/templates/foto.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/templates/start.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/css/fontawesome-all.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/css/images/arrow-small.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/css/images/arrow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/css/images/close-small-alt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/css/images/close-small.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/css/images/close.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/css/images/open-small.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/css/images/open.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/css/images/spinner.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/css/noscript.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/js/breakpoints.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/js/browser.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/sass/base/_page.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/sass/base/_reset.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/sass/base/_typography.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/sass/components/_actions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/sass/components/_button.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/sass/components/_form.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/sass/components/_icon.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/sass/components/_icons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/sass/components/_list.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/sass/layout/_footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/sass/layout/_header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/sass/layout/_main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/sass/layout/_thumbnails.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/sass/layout/_viewer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/sass/libs/_breakpoints.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/sass/libs/_functions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/sass/libs/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/sass/libs/_vars.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/sass/libs/_vendor.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/sass/main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/sass/noscript.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/webfonts/fa-brands-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/webfonts/fa-brands-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/webfonts/fa-brands-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/webfonts/fa-brands-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/webfonts/fa-brands-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/webfonts/fa-regular-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/webfonts/fa-regular-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/webfonts/fa-regular-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/webfonts/fa-regular-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/webfonts/fa-regular-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/webfonts/fa-solid-900.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/webfonts/fa-solid-900.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/webfonts/fa-solid-900.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/webfonts/fa-solid-900.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/assets/webfonts/fa-solid-900.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/images/fulls/01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/images/fulls/02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/images/fulls/03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/images/fulls/04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/images/fulls/05.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/images/fulls/06.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/images/fulls/07.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/images/fulls/08.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/images/fulls/09.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/images/fulls/10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/images/fulls/11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/images/fulls/12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/images/thumbs/01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/images/thumbs/02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/images/thumbs/03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/images/thumbs/04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/images/thumbs/05.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/images/thumbs/06.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/images/thumbs/07.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/images/thumbs/08.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/images/thumbs/09.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/images/thumbs/10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/images/thumbs/11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/images/thumbs/12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/templatesLens/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/uploads/Icon-hdpi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/src/main/resources/AggiungiFotografo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/src/main/resources/Foto.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/src/main/resources/aggiungiAlbum.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/src/main/resources/aggiungiFotografia.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/src/main/resources/assets/css/aggiungiForm.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/src/main/resources/assets/css/foto.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SILPH-SPA/src/main/resources/assets/js/funzionario.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.project" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.apt.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.settings/org.springframework.ide.eclipse.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/.project" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/src/main/java/it/uniroma3/authtest/Application.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/src/main/java/it/uniroma3/authtest/DBPopulation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/src/main/java/it/uniroma3/authtest/auth/AuthConfiguration.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/src/main/java/it/uniroma3/authtest/controller/MainController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/src/main/java/it/uniroma3/authtest/model/Album.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/src/main/java/it/uniroma3/authtest/model/Cliente.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/src/main/java/it/uniroma3/authtest/model/Fotografia.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/src/main/java/it/uniroma3/authtest/model/Fotografo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/src/main/java/it/uniroma3/authtest/model/Funzionario.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/src/main/java/it/uniroma3/authtest/model/Richiesta.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/src/main/java/it/uniroma3/authtest/service/AlbumService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/src/main/java/it/uniroma3/authtest/service/ClienteService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/src/main/java/it/uniroma3/authtest/service/FotografiaService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/src/main/java/it/uniroma3/authtest/service/RichiestaService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/src/main/java/it/uniroma3/authtest/storage/AlbumRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/src/main/java/it/uniroma3/authtest/storage/ClienteRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/src/main/java/it/uniroma3/authtest/storage/FotografiaRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/src/main/java/it/uniroma3/authtest/storage/FunzionarioRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/src/main/java/it/uniroma3/authtest/storage/RichiestaRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/templates/admin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/templates/error.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/target/classes/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/target/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/target/classes/templates/admin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/target/classes/templates/error.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/target/classes/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/MvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/controller/FotografiaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/controller/FotografiaValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/controller/FotografoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/controller/FotografoValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/service/FotografoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/service/FunzionarioService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/storage/FotografoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/messages/validation_EN.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/messages/validation_IT.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/aggiungiForm.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/funzionario.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/images/loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/images/overlay.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/breakpoints.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/browser.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/funzionario.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.poptrox.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/sass/libs/_breakpoints.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/sass/libs/_functions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/sass/libs/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/sass/libs/_vars.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/sass/libs/_vendor.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/sass/main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/sass/noscript.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/addfoto.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/addfotografo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/aggiungiAlbum.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/foto.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/maven/authtest/authtest/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/maven/authtest/authtest/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/MvcConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/controller/FotografiaController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/controller/FotografiaValidator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/controller/FotografoController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/controller/FotografoValidator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/service/FotografoService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/service/FunzionarioService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/storage/FotografoRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/messages/validation_EN.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/messages/validation_IT.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/css/aggiungiForm.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/css/funzionario.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/css/images/loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/css/images/overlay.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/breakpoints.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/browser.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/funzionario.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/jquery.poptrox.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/sass/libs/_breakpoints.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/sass/libs/_functions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/sass/libs/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/sass/libs/_vars.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/sass/libs/_vendor.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/sass/main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/sass/noscript.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/addfoto.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/addfotografo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/aggiungiAlbum.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/foto.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/.metadata/.log" beforeDir="false" afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/.metadata/.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/.metadata/.plugins/org.eclipse.core.resources/.root/1.tree" beforeDir="false" afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/.metadata/.plugins/org.eclipse.core.resources/.root/2.tree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" beforeDir="false" afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" beforeDir="false" afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" beforeDir="false" afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/.metadata/version.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/.metadata/version.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/java/it/uniroma3/siw/SilphSpaApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/java/it/uniroma3/siw/SilphSpaApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/java/it/uniroma3/siw/controller/FotografiaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/java/it/uniroma3/siw/controller/FotografiaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/java/it/uniroma3/siw/model/Album.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/java/it/uniroma3/siw/model/Album.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/java/it/uniroma3/siw/model/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/java/it/uniroma3/siw/model/Cliente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/java/it/uniroma3/siw/model/Fotografia.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/java/it/uniroma3/siw/model/Fotografia.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/java/it/uniroma3/siw/model/Fotografo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/java/it/uniroma3/siw/model/Fotografo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/java/it/uniroma3/siw/model/Funzionario.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/java/it/uniroma3/siw/model/Funzionario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/java/it/uniroma3/siw/model/Richiesta.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/java/it/uniroma3/siw/model/Richiesta.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/java/it/uniroma3/siw/repository/FotografiaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/java/it/uniroma3/siw/repository/FotografiaRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/java/it/uniroma3/siw/repository/RichiestaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/java/it/uniroma3/siw/repository/RichiestaRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/java/it/uniroma3/siw/service/FotografiaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/java/it/uniroma3/siw/service/FotografiaService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/java/it/uniroma3/siw/service/RichiestaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/java/it/uniroma3/siw/service/RichiestaService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../SILPH-SPA/bin/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/src/test/java/it/uniroma3/siw/SilphSpaApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/src/main/resources/Funzionario.html" beforeDir="false" afterPath="$PROJECT_DIR$/../SILPH-SPA/src/main/resources/Funzionario.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/src/main/resources/LoginAdmin.html" beforeDir="false" afterPath="$PROJECT_DIR$/../SILPH-SPA/src/main/resources/LoginAdmin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/src/main/resources/assets/css/funzionario.css" beforeDir="false" afterPath="$PROJECT_DIR$/../SILPH-SPA/src/main/resources/assets/css/funzionario.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/src/main/resources/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../SILPH-SPA/src/main/resources/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/src/main/resources/templates/foto.html" beforeDir="false" afterPath="$PROJECT_DIR$/../SILPH-SPA/src/main/resources/templates/foto.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/auth/AuthConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/auth/AuthConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/model/Fotografia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/model/Fotografia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/model/Fotografo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/model/Fotografo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/model/Richiesta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/model/Richiesta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/service/ClienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/service/ClienteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/service/FotografiaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/service/FotografiaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/storage/FotografiaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/storage/FotografiaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/storage/FunzionarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/storage/FunzionarioRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/welcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/bin/src/main/resources/templates/welcome.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/authtest.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/bin/target/classes/META-INF/authtest.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/DBPopulation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/DBPopulation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/auth/AuthConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/controller/MainController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/model/Album.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/model/Album.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/model/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/model/Cliente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/model/Fotografia.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/model/Fotografo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/model/Funzionario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/model/Funzionario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/model/Richiesta.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/service/AlbumService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/service/AlbumService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/service/ClienteService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/service/FotografiaService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/service/RichiestaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/service/RichiestaService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/storage/AlbumRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/storage/AlbumRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/storage/ClienteRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/storage/ClienteRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/storage/FotografiaRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/storage/FunzionarioRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/storage/RichiestaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/storage/RichiestaRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/welcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/bin/target/classes/templates/welcome.html" afterDir="false" />
-    </list>
+    <list default="true" id="28cc92e9-6eec-4c0b-8035-96029c213e37" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -365,17 +29,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/model/Fotografo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="-176">
               <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/storage/ClienteRepository.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/service/RichiestaService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+            <state relative-caret-position="198">
+              <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -455,7 +119,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/auth/AuthConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
+            <state relative-caret-position="-108">
               <caret line="73" selection-start-line="73" selection-end-line="73" />
             </state>
           </provider>
@@ -540,7 +204,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="125" />
     <option name="y" value="55" />
     <option name="width" value="980" />
@@ -753,12 +417,12 @@
       <workItem from="1560677512483" duration="3449000" />
       <workItem from="1560693730273" duration="3176000" />
       <workItem from="1560777877740" duration="5000" />
-      <workItem from="1560934097068" duration="37000" />
+      <workItem from="1560934097068" duration="281000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7572000" />
+    <option name="totallyTimeSpent" value="7816000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -773,7 +437,7 @@
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12281879" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18389262" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -783,7 +447,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32841823" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32841823" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -791,7 +455,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.3297587" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3297587" />
       <window_info anchor="bottom" id="Spring" order="11" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
@@ -969,16 +633,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/service/RichiestaService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -1020,23 +674,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/storage/AlbumRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/model/Fotografo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/storage/ClienteRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1101,9 +738,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/storage/ClienteRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/model/Fotografo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-176">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/service/RichiestaService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/auth/AuthConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
+        <state relative-caret-position="-108">
           <caret line="73" selection-start-line="73" selection-end-line="73" />
         </state>
       </provider>
