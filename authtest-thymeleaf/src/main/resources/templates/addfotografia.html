@@ -4,14 +4,16 @@
 	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity">
 <head>
 <meta charset="ISO-8859-1">
-<title>Aggiungi Album</title>
+<title>Aggiungi Fotografia</title>
 <link rel="stylesheet" href="css/aggiungiForm.css" />
+<script defer
+	src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 <body>
 	<div class="mediumline"></div>
 	<div class="smallline"></div>
 	<div class="header">
-		<h1 th:text="${funzionario.nome+' aggiungi un Album'}">Benvenuto
+		<h1 th:text="${funzionario.nome+' aggiungi una Fotografia'}">Benvenuto
 			Admin</h1>
 		<div>
 			<a th:href="@{/logout}">
@@ -54,20 +56,23 @@
 		</div>
 	</div>
 	<div class="central">
-		<form class="loginbox" th:action="@{/addalbum}" th:object="${album}" method="post">
-			<h2>Seleziona Fotografo</h2>
-			<label for="Fotografo"></label> <select th:field="*{fotografo}">
-				<option th:each="fotografo: ${fotografi}"
-					th:value="${fotografo.primaryKey}"
-					th:text="${fotografo.primaryKey+' '+fotografo.cognome +' '+fotografo.nome}">
+		<form class="loginbox" th:action="@{/addfotografia}"
+			th:object="${fotografia}" method="post" enctype="multipart/form-data">
+			<h2>Seleziona Album</h2>
+			<label for="Album"></label> <select th:field="*{album}">
+				<option th:each="album: ${album}" th:value="${album.primaryKey}"
+					th:text="${album.primaryKey+' '+album.nome +' di '+album.fotografo.cognome + ' '+album.fotografo.nome}">
 			</select>
-			<h2>Nome</h2>
+			<h2>Nome Fotografia</h2>
 			<input type="text" th:field="*{nome}"
-				placeholder="Aggiungi Nome Album"> <input type="submit"
-				name="" value="Conferma">
+				placeholder="Aggiungi Nome Fotografia">
+			<h3>Aggiungi Foto</h3>
+			<input type="file" name="imgFile" id="file" class="upload"
+				multiple="multiple" /> <label for="file">Choose a file</label>
 			<h2>Descrizione</h2>
 			<textarea id="subject" th:field="*{descrizione}"
 				placeholder="Scrivi Qualcosa.." style="height: 200px"></textarea>
+			<input type="submit" name="" value="Conferma">
 		</form>
 	</div>
 </body>

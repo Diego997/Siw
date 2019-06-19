@@ -49,7 +49,6 @@ public class AlbumController {
 		this.albumValidator.validate(album, bindingResult);
 		if (!bindingResult.hasErrors()) {
 			Fotografo fotografo = album.getFotografo();
-			System.out.printf(fotografo.getCognome());
 			fotografo.getAlbum().add(album);
 			fotografoService.salva(fotografo);
 			model.addAttribute("album", album);

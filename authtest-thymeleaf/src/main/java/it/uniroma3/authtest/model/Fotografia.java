@@ -21,6 +21,9 @@ public class Fotografia {
 	@Column(name="thumb")
 	private byte[] thumb;
 	
+	@ManyToOne
+	private Album album;
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -87,6 +90,12 @@ public class Fotografia {
 	}
 	public void setThumb(byte[] thumb) {
 		this.thumb = thumb;
+	}
+	public Album getAlbum() {
+		return album;
+	}
+	public void setAlbum(Album album) {
+		this.album = album;
 	}
 	
 }
