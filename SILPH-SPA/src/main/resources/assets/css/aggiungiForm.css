@@ -133,7 +133,8 @@ h1 {
 }
 
 .upload+label {
-	margin-left: 110px;
+	margin-left: auto;
+	margin-right: auto;
 	width: 200px;
 	height: 40px;
 	font-size: 1em;
@@ -223,7 +224,6 @@ h1 {
 .central h3 {
 	text-align: center;
 }
-
 
 textarea {
 	width: 50%;
