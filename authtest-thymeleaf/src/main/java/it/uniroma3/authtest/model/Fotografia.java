@@ -23,7 +23,7 @@ public class Fotografia {
 	
 	@ManyToOne
 	private Album album;
-	
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;

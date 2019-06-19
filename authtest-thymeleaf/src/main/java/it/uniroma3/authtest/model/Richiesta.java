@@ -1,8 +1,8 @@
 package it.uniroma3.authtest.model;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 
 @Entity
@@ -18,8 +18,8 @@ public class Richiesta {
 
 	private boolean checked;
 	
-	@OneToMany(targetEntity = Fotografia.class)
-	private List<Fotografia> fotografie=new ArrayList<Fotografia>();
+	@ManyToMany(targetEntity = Fotografia.class)
+  private Set<Fotografia> fotografie=new HashSet<Fotografia>();
 
 	private final static int MAX_FOTO= 10;
 
@@ -40,11 +40,11 @@ public class Richiesta {
 		this.cliente = cliente;
 	}
 
-	public List<Fotografia> getFotografie() {
+	public Set<Fotografia> getFotografie() {
 		return fotografie;
 	}
 
-	public void setFotografie(List<Fotografia> fotografie) {
+	public void setFotografie(Set<Fotografia> fotografie) {
 		this.fotografie = fotografie;
 	}
 
@@ -81,9 +81,8 @@ public class Richiesta {
 
   public boolean isEmpty() {
     if(this.fotografie!=null)
-      return false;//////////////////////////////////////
-    //return this.fotografie.isEmpty();
-    return false;
+      return this.fotografie.isEmpty();
+    return true;
   }
 
   public boolean isValidCustomer() {

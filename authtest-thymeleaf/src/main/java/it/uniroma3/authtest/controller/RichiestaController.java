@@ -40,12 +40,13 @@ public class RichiestaController {
 
 
   @RequestMapping({"/inserisciFotoRichiesta"})
-  public String listProductHandler(HttpServletRequest request, Model model, //
-                                   @RequestParam(value = "code") Long code) {
+  public String listProductHandler(HttpServletRequest request, Model model,
+                                   @RequestParam(value = "id") Long id) {
 
-    Fotografia foto = null;
-    if (code != null) {
-      foto = fotografiaService.cercaPerId(code);
+    Fotografia foto=null;
+    if (id != null) {
+     foto=fotografiaService.cercaPerId(id);
+
     }
     if (foto != null) {
 
