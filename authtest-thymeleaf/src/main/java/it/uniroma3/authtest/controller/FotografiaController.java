@@ -58,7 +58,9 @@ public class FotografiaController {
 		model.addAttribute("album", albumService.tutti());
 		return "addfotografia";
 	}
-
+//<a
+//                   href="${pageContext.request.contextPath}/buyProduct?code=${prodInfo.code}">
+//                       Buy Now</a>
 	@PostMapping("/addfotografia")
 	public String uploadImage(@Valid @ModelAttribute("fotografia") Fotografia fotografia, @RequestParam("imgFile") MultipartFile imageFile, Model model, BindingResult bindingResult ){
 		UserDetails details = (UserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
