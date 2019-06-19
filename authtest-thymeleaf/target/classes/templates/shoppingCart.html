@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://wwww.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrello</title>
+</head>
+<body>
+<div th:each="fotografia : ${fotografie}">
+<p th:text="${fotografia.nome}">Static content</p>
+<img th:src="${fotografia.img} == null ? _ : @{'data:image/png;base64,'+*{T(org.springframework.util.Base64Utils).encodeToString(fotografia.img)}}">
+</div>
+
+<a th:href="@{/shoppingCartConfirmation}">Conferma</a>
+</body>
+</html>
