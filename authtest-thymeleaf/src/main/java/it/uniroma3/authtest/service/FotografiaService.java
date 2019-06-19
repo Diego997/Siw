@@ -97,7 +97,7 @@ public class FotografiaService {
 	}
 
 	public boolean alreadyExists(Fotografia o) {
-		// TODO Auto-generated method stub
+
 		return false;
 	}
 }
