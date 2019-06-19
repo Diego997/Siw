@@ -19,7 +19,7 @@ public class ClienteService {
 	}
 
 	@Transactional
-	public Cliente ClientePerEmail(String email) {
+	public Cliente clientePerEmail(String email) {
 		return clienteRepository.findByEmail(email);
 	}
 

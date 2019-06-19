@@ -1,0 +1,295 @@
+@charset "ISO-8859-1";
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #696969;
+	font-family: sans-serif;
+}
+
+.smallline {
+	width: 100%;
+	height: 10px;
+	background: #696969;
+}
+
+.line {
+	width: 100%;
+	height: 30px;
+	background: #000000;
+}
+
+.mediumline {
+	width: 100%;
+	height: 20px;
+	background: #333;
+}
+
+.header {
+	width: 100%;
+	height: 80px;
+	display: block;
+	background: #D3D3D3;
+}
+
+h1 {
+	color: #000000;
+	text-transform: upeercase;
+	font-weight: bold;
+	position: absolute;
+	left: 7%;
+}
+
+.column {
+	border: 10px solid transparent;
+	float: left;
+	width: 40%;
+	padding: 10px;
+	height: 120%;
+}
+
+.btnlogout {
+	position: absolute;
+	top: 9.5%;
+	right: 1%;
+}
+
+.btnlogout {
+	background: #696969;
+	color: #ccc;
+	width: 200px;
+	height: 40px;
+	border: 1px solid #000000;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 4px;
+	transition: .6s;
+	overflow: hidden;
+}
+
+.btnlogout:focus {
+	outline: none;
+}
+
+.btnlogout:before {
+	content: '';
+	display: block;
+	position: absolute;
+	background: rgba(255, 255, 255, .5);
+	width: 60px;
+	heigth: 100%;
+	left: 0;
+	top: 0;
+	opacity: .5s;
+	filter: blur(30px);
+	transform: translate(-100px) scaleX(-15deg);
+}
+
+.btnlogout:hover {
+	background: #000000;
+	cursor: poiner;
+}
+
+.btnlogout:hover:before {
+	transform: translateX(300px) skewX(-15deg);
+	opacity: .6;
+	transition: .7s;
+}
+
+.btnlogout:hover:after {
+	transform: translateX(300px) skewX(-15deg);
+	opacity: 1;
+	transition: .7s;
+}
+
+/* Navbar container */
+.navbar {
+	overflow: hidden;
+	background-color: #333;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+/* Links inside the navbar */
+.navbar a {
+	float: left;
+	font-size: 20px;
+	color: #D3D3D3;
+	text-align: center;
+	padding: 20px 24px;
+	text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+	float: left;
+	overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+	font-weight: bold;
+	font-size: 20px;
+	border: none;
+	outline: none;
+	color: #D3D3D3;
+	padding: 20px 24px;
+	background-color: #333;
+	font-family: sans-serif;
+	/* Important for vertical align on mobile phones */
+	margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+	background-color: #696969;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #D3D3D3;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	font-weight: normal;
+	border: 1px solid black;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+	float: none;
+	color: black;
+	padding: 18px 22px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	font-size: 22px;
+	border: 1px solid black;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: black;
+	color: #ccc;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.upload {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+}
+
+.upload+label {
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+	height: 40px;
+	font-size: 1em;
+	font-weight: 500;
+	color: white;
+	line-height: 2.6em;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: #696969;
+	display: inline-block;
+	border-radius: 10px;
+	box-shadow: 0px 3px 0px #333;
+	transition: 150ms;
+	width: 200px;
+}
+
+.upload:focus+label, .upload+label:hover {
+	background-color: #D3D3D3;
+	box-shadow: 0px 5px 0px #333;
+	cursor: pointer;
+	color: #000;
+}
+
+.upload:focus+label {
+	outline: 1px dotted #000;
+	outline: -webkit-focus-ring-color auto 5px;
+}
+
+.central {
+	background-color: #D3D3D3;
+	top: 5%;
+	left: 5%;
+	border: 15px solid #333;
+	padding: 30px;
+	padding: 30px;
+	margin: 50px;
+	column-count: 2;
+}
+
+.loginbox input[type="text"], .loginbox input[type="password"],
+	.loginbox select {
+	border: 0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #333;
+	padding: 14px 10px;
+	width: 200px;
+	outline: none;
+	color: #333;
+	border-radius: 8px;
+	transition: 0.25s;
+}
+
+.loginbox input[type="text"]:focus, .loginbox input[type="password"]:focus
+	{
+	width: 280px;
+	border-color: #333;
+}
+
+.loginbox input[type="submit"] {
+	border: 0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #333;
+	padding: 14px 40px;
+	outline: none;
+	color: #333;
+	border-radius: 3px;
+	transition: 0.25s;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.loginbox input[type="submit"]:hover {
+	background: #333;
+	color: #f8f8f8;
+}
+
+.central h2 {
+	text-align: center;
+}
+
+.central h3 {
+	text-align: center;
+}
+
+
+textarea {
+	width: 50%;
+	heigth: 100px;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border: 5px solid #333;
+	border-radius: 8px;
+	background-color: #f8f8f8;
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}

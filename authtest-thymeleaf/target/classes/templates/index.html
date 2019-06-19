@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+<title>Silph-SPA</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="style.css">
+<script defer
+	src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+	<div class="mediumline"></div>
+	<div class="smallline"></div>
+	<div>
+		<div class="header">
+			<div class="search-box">
+				<input type="text" name="" class="search-txt"
+					placeholder="Type to search" /> <a class="search-btn" href="#">
+					<i class="fas fa-search"></i>
+				</a>
+			</div>
+			<div class="button" sec:authorize="isAuthenticated()">
+				<a th:href="@{/admin}">
+					<button type="button">Admin Page</button>
+				</a>
+			</div>
+			<div class="button" sec:authorize="isAnonymous()">
+				<a th:href="@{/login}">
+					<button type="button">Login Admin</button>
+				</a>
+			</div>
+
+		</div>
+		<div class="smallline"></div>
+		<div class="line"></div>
+
+		<!-- Main -->
+		<section id="main">
+			<!-- Items -->
+			<div class="items">
+
+				<div class="item intro span-2">
+					<h1>SILPH</h1>
+					<p>
+						Photos Photographer and Art<br />
+				</div>
+				<th:block th:each="fotografia,iterStat : ${fotografie1}">
+					<article
+						th:class="${iterStat.odd}? 'item thumb span-1' : 'item thumb span-2'">
+						<h2 th:text="${fotografia.nome}">img name</h2>
+						<a
+							th:href="${fotografia.img} == null ? _ : @{'data:image/png;base64,'+*{T(org.springframework.util.Base64Utils).encodeToString(fotografia.img)}}"
+							class="image"><img
+							th:src="${fotografia.thumb} == null ? _ : @{'data:image/png;base64,'+*{T(org.springframework.util.Base64Utils).encodeToString(fotografia.thumb)}}"
+							alt=""></a>
+					</article>
+				</th:block>
+			</div>
+
+
+			<!-- Items -->
+			<div class="items">
+				<th:block th:each="fotografia,iterStat : ${fotografie2}">
+					<article
+						th:class="${iterStat.odd}? 'item thumb span-3' : 'item thumb span-1'">
+						<h2 th:text="${fotografia.nome}">img name</h2>
+						<a
+							th:href="${fotografia.img} == null ? _ : @{'data:image/png;base64,'+*{T(org.springframework.util.Base64Utils).encodeToString(fotografia.img)}}"
+							class="image"><img
+							th:src="${fotografia.thumb} == null ? _ : @{'data:image/png;base64,'+*{T(org.springframework.util.Base64Utils).encodeToString(fotografia.thumb)}}"
+							alt=""></a>
+					</article>
+				</th:block>
+			</div>
+
+		</section>
+
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.poptrox.min.js"></script>
+	<script src="js/browser.min.js"></script>
+	<script src="js/breakpoints.min.js"></script>
+	<script src="js/util.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

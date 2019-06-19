@@ -18,6 +18,9 @@ public class Fotografia {
 	@Column(name="img")
 	private byte[] img;
 	
+	@Column(name="thumb")
+	private byte[] thumb;
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -78,6 +81,12 @@ public class Fotografia {
 	}
 	public void setImg(byte[] filemode) {
 		this.img = filemode;
+	}
+	public byte[] getThumb() {
+		return thumb;
+	}
+	public void setThumb(byte[] thumb) {
+		this.thumb = thumb;
 	}
 	
 }
