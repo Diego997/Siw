@@ -73,7 +73,7 @@
 				th:text="${'Nome: '+richiesta.cliente.nome +' Cognome: '+richiesta.cliente.cognome +' Email: '+richiesta.cliente.email}">
 				Lorem ipsum..<br>
 			</p>
-      <p><h2 th:each="fotografia,i : ${richiesta.fotografie}" th:text="${'Foto' +i.count +': '+fotografia.nome}">Foto nome</h2> </p>
+      <p><h4 th:each="fotografia,i : ${richiesta.fotografie}" th:text="${'Foto' +i.count +': '+fotografia.nome}">Foto nome</h4> </p>
 			<button class="btn success">Gestisci</button>
 		</div>
 	</th:block>
