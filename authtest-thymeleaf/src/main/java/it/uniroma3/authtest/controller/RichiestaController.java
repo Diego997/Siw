@@ -39,9 +39,9 @@ public class RichiestaController {
   private ClienteService clienteService;
 
 
-  @RequestMapping({"/buyProduct"})
+  @RequestMapping({"/inserisciFotoRichiesta"})
   public String listProductHandler(HttpServletRequest request, Model model, //
-                                   @RequestParam(value = "code", defaultValue = "") Long code) {
+                                   @RequestParam(value = "code") Long code) {
 
     Fotografia foto = null;
     if (code != null) {
@@ -58,7 +58,7 @@ public class RichiestaController {
     return "redirect:/shoppingCart";
   }
 
-  @RequestMapping({"/shoppingCartRemoveProduct"})
+  @RequestMapping({"/rimuoviFotoRichiesta"})
   public String removeProductHandler(HttpServletRequest request, Model model, //
                                      @RequestParam(value = "code", defaultValue = "") Long code) {
     Fotografia product = null;
