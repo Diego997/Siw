@@ -10,15 +10,17 @@ public class Album {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long primaryKey;
-	
+
 	@Column
 	private String nome;
 	@Column
 	private String descrizione;
+	@ManyToOne
+	private Fotografo fotografo;
 
 	@OneToMany(targetEntity = Fotografia.class)
 	private List<Fotografia> fotografie;
-	
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -83,5 +85,17 @@ public class Album {
 	}
 	public void setFotografie(List<Fotografia> fotografie) {
 		this.fotografie = fotografie;
+	}
+	public String getDescrizione() {
+		return descrizione;
+	}
+	public void setDescrizione(String descrizione) {
+		this.descrizione = descrizione;
+	}
+	public Fotografo getFotografo() {
+		return fotografo;
+	}
+	public void setFotografo(Fotografo fotografo) {
+		this.fotografo = fotografo;
 	}
 }

@@ -264,6 +264,7 @@ h1 {
 	transition: 0.25s;
 	cursor: pointer;
 	font-size: 20px;
+	heigth: 30px;
 }
 
 .loginbox input[type="submit"]:hover {
@@ -278,7 +279,6 @@ h1 {
 .central h3 {
 	text-align: center;
 }
-
 
 textarea {
 	width: 50%;

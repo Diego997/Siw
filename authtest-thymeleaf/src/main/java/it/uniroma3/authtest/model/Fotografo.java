@@ -19,7 +19,7 @@ public class Fotografo {
 	private String descrizione;
 	@Column(name="img")
 	private byte[] img;
-	@OneToMany(targetEntity = Album.class)
+	@OneToMany(targetEntity = Album.class, cascade = {CascadeType.ALL})
 	private List<Album> album;
 	
 	public Long getPrimaryKey() {
