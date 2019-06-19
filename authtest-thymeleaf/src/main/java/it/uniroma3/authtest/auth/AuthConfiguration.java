@@ -68,8 +68,10 @@ public class AuthConfiguration extends WebSecurityConfigurerAdapter {
 		// logout paragraph: we are going to define here how to logout
 		.and().logout().permitAll();
 
+
 		http.csrf().disable();
 	}
+
 
 	@Autowired
 	public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {

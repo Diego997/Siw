@@ -2,9 +2,33 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Conferma Carrello</title>
+<link rel="stylesheet" href="assets/css/confermaCarrello.css" />
 </head>
 <body>
-
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Dati acquirente</h3>
+            <label for="fname"><i class="fa fa-user"></i> Nome</label>
+            <input type="text" id="fname" name="firstname" placeholder="Inserisci Nome">
+                        <label for="fname"><i class="fa fa-user"></i> Cognome</label>
+            <input type="text" id="fname" name="firstname" placeholder="Inserisci Cognome">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="Inserisci E-Mail">
+            </div>
+          </div>                   
+        </div>
+        <label>
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+  </div>
+  
+</div>
 </body>
 </html>

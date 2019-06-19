@@ -47,6 +47,7 @@ public class MainController {
 
 	@GetMapping(value="/login")
 	public String login(){
+
 		return "login";
 	}
 
