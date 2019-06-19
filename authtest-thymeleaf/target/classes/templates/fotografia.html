@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity">
+<head>
+<link rel="stylesheet" href="/css/foto.css" />
+<script defer
+	src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<title>Fotografia</title>
+</head>
+
+<body>
+	<div class="box">
+		<div class="container">
+			<img
+				th:src="${fotografia.img} == null ? _ : @{'data:image/png;base64,'+*{T(org.springframework.util.Base64Utils).encodeToString(fotografia.img)}}"
+				alt="" style="width: 100%;">
+			<div class="content">
+				<h1
+					th:text="${fotografia.nome+' by '+fotografia.album.fotografo.cognome+' '+fotografia.album.fotografo.nome}">Title
+					by NomeFotografo</h1>
+				<p th:text="${fotografia.descrizione}">Descrizione</p>
+			</div>
+		</div>
+	</div>
+	<form th:action="@{/inserisciFotoRichiesta}">
+	<input type="hidden" value="${fotografia.primaryKey}" name="code">
+	<input type="submit" class="btn" value="Aggiungi al Carrello">
+		<i class="fa fa-shopping-cart"></i> 
+	</input>
+	</form>
+</body>
+</html>

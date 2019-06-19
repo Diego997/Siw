@@ -47,7 +47,7 @@ public class FotografiaController {
 		Fotografia fotografia = fotografiaService.cercaPerId(id);
 
 		model.addAttribute("fotografia", fotografia);
-		return "foto";
+		return "fotografia";
 	}
 
 	@GetMapping("/addfotografia")

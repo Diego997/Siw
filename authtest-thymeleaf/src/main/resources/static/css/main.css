@@ -7,6 +7,7 @@
 	Parallelism by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	dio porco
 */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
 	blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
@@ -140,7 +141,8 @@ button:hover:after {
 }
 
 .search-txt {
-	border: none;
+	color: white; 
+	border : none;
 	background: none;
 	outline: none;
 	float: left;
@@ -150,6 +152,7 @@ button:hover:after {
 	line-height: 20px;
 	width: 240px;
 	font-weight: bold;
+	border: none;
 }
 
 body {
@@ -179,7 +182,7 @@ body {
 }
 
 mark {
-	background-color: #808080;
+	background-color: black;
 	color: inherit;
 }
 
@@ -210,7 +213,7 @@ body {
 	background-attachment: fixed;
 	background-repeat: repeat, no-repeat, auto;
 	position: relative;
-	background-color: #150C07;
+	background-color: #000000;
 	line-height: 1.75em;
 	overflow-x: hidden;
 	overflow-y: auto;
