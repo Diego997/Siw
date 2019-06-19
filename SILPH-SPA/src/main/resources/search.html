@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity">
 <head>
-<link rel="stylesheet" href="assets/css/search.css" />
+<link rel="stylesheet" th:href="@{/css/search.css}" />
 <script defer
 	src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 <meta name="viewport"
@@ -13,7 +15,7 @@
 	<div class="smallline"></div>
 	<div>
 		<div class="header">
-			<form action="/action_page.php">
+			<form th:action="@{/search}">
 				<div class="search-box">
 					<input type="text" name="" class="search-txt"
 						placeholder="Type to search" /> <a class="search-btn" href="#">
@@ -29,7 +31,7 @@
 				</label>
 			</form>
 			<div class="button">
-				<button type="button">Carrello<i class="fa fa-shopping-cart"></i></button>
+				<button type="button">Carrello<i class="fa fa-shopping-cart"></i>  <span class="badge">3</span></button>
 			</div>
 		</div>
 		<div class="smallline"></div>

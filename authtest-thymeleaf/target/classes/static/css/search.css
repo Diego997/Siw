@@ -98,6 +98,17 @@ body{
 	display: none;
 }
 
+
+.badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background: black;
+  color: white;
+}
+
 button {
 	position: absolute;
 	top: 8%;
@@ -209,7 +220,7 @@ button:hover:after {
 /* Create four equal columns that floats next to each other */
 .column {
   float: left;
-  width: 25%;
+  width: 23%;
   color: white;
 }
 
