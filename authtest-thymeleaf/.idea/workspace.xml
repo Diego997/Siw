@@ -2,9 +2,183 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28cc92e9-6eec-4c0b-8035-96029c213e37" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/DBPopulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/DBPopulation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/DBPopulation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/DBPopulation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/.settings/org.eclipse.jdt.apt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/.settings/org.springframework.ide.eclipse.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/Funzionario.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/LoginAdmin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/META-INF/maven/it.uniroma3.siw.SILPH-SPA/SILPH-SPA/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/META-INF/maven/it.uniroma3.siw.SILPH-SPA/SILPH-SPA/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/assets/css/funzionario.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/assets/css/images/loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/assets/css/images/overlay.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/assets/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/assets/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/assets/js/breakpoints.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/assets/js/browser.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/assets/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/assets/js/jquery.poptrox.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/assets/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/assets/js/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/assets/sass/libs/_breakpoints.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/assets/sass/libs/_functions.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/assets/sass/libs/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/assets/sass/libs/_vars.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/assets/sass/libs/_vendor.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/assets/sass/main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/assets/sass/noscript.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/images/avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/images/bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/images/fulls/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/images/fulls/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/images/fulls/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/images/fulls/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/images/fulls/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/images/fulls/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/images/fulls/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/images/fulls/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/images/fulls/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/images/fulls/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/images/fulls/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/images/fulls/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/images/fulls/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/images/fulls/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/images/fulls/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/images/fulls/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/images/fulls/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/images/thumbs/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/images/thumbs/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/images/thumbs/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/images/thumbs/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/images/thumbs/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/images/thumbs/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/images/thumbs/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/images/thumbs/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/images/thumbs/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/images/thumbs/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/images/thumbs/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/images/thumbs/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/images/thumbs/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/images/thumbs/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/images/thumbs/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/images/thumbs/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/images/thumbs/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/messages/validation_EN.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/messages/validation_IT.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/templates/allfoto.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/templates/foto.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/bin/target/classes/templates/start.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/AggiungiFotografo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/Album.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/Foto.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/Fotografo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/Funzionario.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/LoginAdmin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/META-INF/maven/it.uniroma3.siw.SILPH-SPA/SILPH-SPA/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/META-INF/maven/it.uniroma3.siw.SILPH-SPA/SILPH-SPA/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/aggiungiAlbum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/aggiungiFotografia.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/assets/css/aggiungiForm.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/assets/css/aggiungiFormAlbum.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/assets/css/album.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/assets/css/carrello.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/assets/css/confermaCarrello.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/assets/css/foto.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/assets/css/funzionario.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/assets/css/images/loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/assets/css/images/overlay.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/assets/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/assets/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/assets/css/search.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/assets/js/breakpoints.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/assets/js/browser.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/assets/js/funzionario.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/assets/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/assets/js/jquery.poptrox.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/assets/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/assets/js/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/assets/sass/libs/_breakpoints.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/assets/sass/libs/_functions.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/assets/sass/libs/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/assets/sass/libs/_vars.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/assets/sass/libs/_vendor.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/assets/sass/main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/assets/sass/noscript.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/carrello.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/confermaCarrello.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/images/avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/images/bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/images/fulls/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/images/fulls/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/images/fulls/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/images/fulls/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/images/fulls/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/images/fulls/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/images/fulls/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/images/fulls/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/images/fulls/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/images/fulls/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/images/fulls/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/images/fulls/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/images/fulls/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/images/fulls/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/images/fulls/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/images/fulls/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/images/fulls/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/images/thumbs/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/images/thumbs/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/images/thumbs/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/images/thumbs/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/images/thumbs/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/images/thumbs/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/images/thumbs/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/images/thumbs/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/images/thumbs/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/images/thumbs/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/images/thumbs/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/images/thumbs/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/images/thumbs/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/images/thumbs/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/images/thumbs/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/images/thumbs/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/images/thumbs/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/it/uniroma3/siw/SilphSpaApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/it/uniroma3/siw/WebConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/it/uniroma3/siw/controller/FotografiaController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/it/uniroma3/siw/controller/FotografiaValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/it/uniroma3/siw/model/Album.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/it/uniroma3/siw/model/Cliente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/it/uniroma3/siw/model/Fotografia.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/it/uniroma3/siw/model/Fotografo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/it/uniroma3/siw/model/Funzionario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/it/uniroma3/siw/model/Richiesta.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/it/uniroma3/siw/repository/AlbumRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/it/uniroma3/siw/repository/ClienteRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/it/uniroma3/siw/repository/FotografiaRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/it/uniroma3/siw/repository/RichiestaRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/it/uniroma3/siw/service/AlbumService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/it/uniroma3/siw/service/ClienteService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/it/uniroma3/siw/service/FotografiaService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/it/uniroma3/siw/service/RichiestaService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/messages/validation_EN.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/messages/validation_IT.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/templates/allfoto.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/templates/foto.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SILPH-SPA/target/classes/templates/start.html" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,7 +231,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/model/Fotografia.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
+            <state relative-caret-position="510">
               <caret line="38" selection-start-line="38" selection-end-line="38" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -70,7 +244,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/DBPopulation.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="392">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,8 +255,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/controller/FotografiaController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="57" column="54" lean-forward="true" selection-start-line="57" selection-start-column="54" selection-end-line="57" selection-end-column="54" />
+            <state relative-caret-position="697">
+              <caret line="57" column="54" selection-start-line="57" selection-start-column="54" selection-end-line="57" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -108,7 +282,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/shoppingCartCustomer.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="510">
-              <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+              <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -197,7 +371,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="980" />
@@ -211,7 +385,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -239,6 +412,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -334,11 +508,12 @@
       <workItem from="1561017338612" duration="2301000" />
       <workItem from="1561028830044" duration="9091000" />
       <workItem from="1561041665350" duration="1216000" />
+      <workItem from="1561044300333" duration="236000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39660000" />
+    <option name="totallyTimeSpent" value="40045000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -352,7 +527,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24228188" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24563758" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -362,7 +537,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" weight="0.32841823" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.32841823" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3994638" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -665,6 +840,7 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/btn.jpg" />
     <entry file="file://$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/service/RichiestaService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -695,6 +871,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/model/Fotografia.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/controller/FotografiaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="57" column="54" selection-start-line="57" selection-start-column="54" selection-end-line="57" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/addfotografia.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/model/Richiesta.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -708,37 +904,14 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/shoppingCartCustomer.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
-          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+          <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/model/Fotografia.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/addfotografia.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/controller/FotografiaController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="57" column="54" lean-forward="true" selection-start-line="57" selection-start-column="54" selection-end-line="57" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/btn.jpg">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/DBPopulation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="147">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
