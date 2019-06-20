@@ -61,7 +61,6 @@ public class FotografoController {
 	public String showAlbumImage(@PathVariable Long id, Model model) {
 		
 		Fotografo fotografo = fotografoService.trovaById(id);
-
 		model.addAttribute("fotografo", fotografo);
 		model.addAttribute("album", fotografo.getAlbum());
 		return "fotografo";

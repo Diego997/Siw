@@ -1,13 +1,32 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-    <head>
-        <title>Error page</title>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="css/main.css" th:href="@{/css/main.css}" />
-    </head>
-    <body th:with="httpStatus=${T(org.springframework.http.HttpStatus).valueOf(#response.status)}">
-        <h1 th:text="|${httpStatus} - ${httpStatus.reasonPhrase}|">404</h1>
-        <p th:utext="${errorMessage}">Error java.lang.NullPointerException</p>
-        <a href="index" th:href="@{/}">Back to Home Page</a>
-    </body>
+<head>
+<style>
+body, html {
+	height: 100%;
+	margin: 0;
+	text-align: center;
+}
+
+.bg {
+	/* The image used */
+	background-image: url("/img/errorPage.png");
+	/* Full height */
+	height: 80%;
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+</style>
+<title>Error page</title>
+<meta charset="utf-8" />
+</head>
+<body
+	th:with="httpStatus=${T(org.springframework.http.HttpStatus).valueOf(#response.status)}">
+	<div class="bg">	</div>
+	<h1 th:text="|${httpStatus} - ${httpStatus.reasonPhrase}|">404</h1>
+	<h3>the rabbits have been nibbling the cables again..</h3>
+	<a href="index" th:href="@{/}">Back to Home Page</a>
+</body>
 </html>
