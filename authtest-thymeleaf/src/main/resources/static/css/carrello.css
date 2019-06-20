@@ -62,12 +62,12 @@ h1 {
   }
 }
 
-button {
+input {
 	position: relative;
 	left:50%;
 }
 
-button {
+input {
 	background: #696969;
 	color: #ccc;
 	width: 200px;
@@ -80,11 +80,11 @@ button {
 	overflow: hidden;
 }
 
-button:focus {
+input:focus {
 	outline: none;
 }
 
-button:before {
+input:before {
 	content: '';
 	display: block;
 	position: relative;
@@ -98,18 +98,18 @@ button:before {
 	transform: translate(-100px) scaleX(-15deg);
 }
 
-button:hover {
+input:hover {
 	background: #000000;
 	cursor: poiner;
 }
 
-button:hover:before {
+input:hover:before {
 	transform: translateX(300px) skewX(-15deg);
 	opacity: .6;
 	transition: .7s;
 }
 
-button:hover:after {
+input:hover:after {
 	transform: translateX(300px) skewX(-15deg);
 	opacity: 1;
 	transition: .7s;

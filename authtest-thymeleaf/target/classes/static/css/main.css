@@ -47,9 +47,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup,
 }
 
 button {
-	position: absolute;
-	top: 9.5%;
-	right: 1%;
+	position: relative;
+	top: -15px;
+	left: 85%;
 }
 
 button {
@@ -128,7 +128,7 @@ button:hover:after {
 
 .container {
 	color: black;
-	top: -10px;
+	top: -20px;
 	left: 30%;
 	position: relative;
 	padding-left: 35px;

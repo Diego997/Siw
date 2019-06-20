@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html xmlns:th="http://wwww.thymeleaf.org">
 <head>
-  <title></title>
+<title>Conferma Carrello</title>
+<link rel="stylesheet" th:href="@{/css/confermaCarrello.css}" />
 </head>
 <body>
-<div class="central">
-  <form class="loginbox" th:action="@{/shoppingCartCustomer}"
-        th:object="${cliente}" method="post">
-    <h2>Email</h2>
-    <input type="email" th:field="*{email}">
-    <h2>Nome</h2>
-    <input type="text" th:field="*{nome}"
-           placeholder="Aggiungi Nome Cliente">
-    <h2>Cognome</h2>
-    <input type="text" th:field="*{cognome}"
-           placeholder="Aggiungi Cognome Cliente">
-    <h2>Descrizione</h2>
-    <textarea id="subject" name="subject" placeholder="Scrivi Qualcosa.."
-              style="height: 200px"></textarea>
-    <input type="submit" name="" value="Conferma">
-  </form>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form th:action="@{/shoppingCartCustomer}" th:object="${cliente}" method="post">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Dati acquirente</h3>
+            <label for="fname"><i class="fa fa-user"></i> Nome</label>
+            <input type="text" th:field="*{nome}" name="firstname" placeholder="Inserisci Nome">
+                        <label for="fname"><i class="fa fa-user"></i> Cognome</label>
+            <input type="text" th:field="*{cognome}" name="firstname" placeholder="Inserisci Cognome">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" th:field="*{email}" name="email" placeholder="Inserisci E-Mail">
+            </div>
+          </div>                   
+        </div>
+        <label>
+        <input type="submit" value="Conferma" class="btn">
+      </form>
+    </div>
+  </div>
+  
 </div>
 </body>
 </html>

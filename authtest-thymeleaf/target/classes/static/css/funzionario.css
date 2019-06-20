@@ -49,9 +49,9 @@ h1 {
 }
 
 .btnlogout {
-	position: absolute;
-	top: 9.5%;
-	right: 1%;
+	position: relative;
+	left: 83%;
+	top: 28px;
 }
 
 .btnlogout {
