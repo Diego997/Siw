@@ -1,11 +1,11 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org"
-      xmlns:sec="http://www.thymeleaf.org/extras/spring-security5">
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security5">
 <head>
 <title>Silph-SPA</title>
 <meta charset="utf-8" />
-<link rel="stylesheet" href="../css/main.css" th:href="@{css/main.css}" type ="text/css"/>
+<link rel="stylesheet" th:href="@{/css/main.css}" />
 <script defer
 	src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 <meta name="viewport"
@@ -17,12 +17,21 @@
 	<div class="smallline"></div>
 	<div>
 		<div class="header">
+		<form th:action="@{/search}" th:object="${search}">
 			<div class="search-box">
 				<input type="text" name="" class="search-txt"
 					placeholder="Type to search" /> <a class="search-btn" href="#">
 					<i class="fas fa-search"></i>
 				</a>
 			</div>
+			<label class="container">Fotografo <input type="radio"
+				name="search" checked="checked"> <span class="checkmark"></span>
+			</label> <label class="container"> Album<input type="radio"
+				name="search"> <span class="checkmark"></span>
+			</label> <label class="container">Fotografia <input type="radio"
+				name="search"> <span class="checkmark"></span>
+			</label>
+			</form>
 			<div class="button" sec:authorize="isAuthenticated()">
 				<a th:href="@{/admin}">
 					<button type="button">Admin Page</button>

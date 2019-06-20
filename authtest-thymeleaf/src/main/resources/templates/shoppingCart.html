@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html xmlns:th="http://wwww.thymeleaf.org">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Carrello</title>
+<link rel="stylesheet" th:href="@{/css/carrello.css}" />
+<title>Carrello</title>
 </head>
 <body>
-<div th:each="fotografia : ${fotografie}">
-<p th:text="${fotografia.nome}">Static content</p>
-<img th:src="${fotografia.img} == null ? _ : @{'data:image/png;base64,'+*{T(org.springframework.util.Base64Utils).encodeToString(fotografia.img)}}">
-</div>
-
-<a th:href="@{/shoppingCartConfirmation}">Conferma</a>
+	<h1>Carrello</h1>
+	<hr>
+	<!-- Portfolio Gallery Grid -->
+	<th:block th:each="fotografia, iterStat : ${fotografie}">
+		<th:block th:if="${iterStat.index}%4==0 or ${iterStat.first}">
+			<div class="row">
+		</th:block>
+		<div class="column">
+			<div class="content">
+				<a  class="image"><img
+					th:src="${fotografia.img} == null ? _ : @{'data:image/png;base64,'+*{T(org.springframework.util.Base64Utils).encodeToString(fotografia.img)}}"
+					alt="" style="width: 100%"></a>
+				<h3 th:text="${fotografia.nome}">Nome Foto</h3>
+			</div>
+		</div>
+<th:block th:if="${iterStat.index}%4==3 or ${iterStat.last}">
+		<!-- END GRID -->
+		</div>
+		</th:block>
+		</th:block>
+		<div>
+		<form th:action="@{/shoppingCartConfirmation}">
+			<div class="button">
+				<input type="submit" class="button" value="Conferma">
+			</div>
+			</form>
+		</div>
 </body>
 </html>
