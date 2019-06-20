@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -22,8 +23,14 @@ public class RichiestaService {
 		return richiestaRepository.getOne(id);
 	}
 	
-	public List<Richiesta> tutti() {
-		return richiestaRepository.findAll();
+	public List<Richiesta> tuttiNonGestiti() {
+      List<Richiesta> rList= richiestaRepository.findAll();
+    List<Richiesta> rList1= new ArrayList<Richiesta>();
+      for(Richiesta r:rList)
+        if (!r.isChecked())
+          rList1.add(r);
+
+      return rList1;
 	}
   @Transactional
   public boolean alreadyExists(Richiesta richiesta) {

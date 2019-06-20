@@ -1,15 +1,15 @@
 package it.uniroma3.authtest.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name="cliente")
 public class Cliente {
 
 	@Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private Long primaryKey;
+	@Column
 	private String email;
 
 	@Column

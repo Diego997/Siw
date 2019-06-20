@@ -72,7 +72,7 @@ public class MainController {
 		model.addAttribute("username", email);
 		model.addAttribute("funzionario", funzionarioService.funzionarioPerEmail(details.getUsername()));
 		model.addAttribute("role", role);
-		model.addAttribute("richieste", richiestaService.tutti());
+		model.addAttribute("richieste", richiestaService.tuttiNonGestiti());
 		return "admin";
 	}
 
@@ -86,7 +86,7 @@ public class MainController {
     model.addAttribute("username", email);
     model.addAttribute("funzionario", funzionarioService.funzionarioPerEmail(details.getUsername()));
     model.addAttribute("role", role);
-    model.addAttribute("richieste", richiestaService.tutti());
+    model.addAttribute("richieste", richiestaService.tuttiNonGestiti());
 	  return "admin";
   }
 }
