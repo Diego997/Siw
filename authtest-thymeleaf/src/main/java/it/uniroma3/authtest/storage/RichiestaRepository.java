@@ -14,9 +14,9 @@ import org.springframework.transaction.annotation.Transactional;
 public interface RichiestaRepository extends JpaRepository<Richiesta, Long>{
 	
 	 Richiesta findByPrimaryKey(Long id);
-  @Modifying
-  @Transactional
-  @Query( value="UPDATE Richiesta r SET r.checked = true WHERE r.primaryKey= :id")
+  @Modifying(clearAutomatically = true,flushAutomatically = true)
+  @Transactional()
+  @Query("UPDATE Richiesta r SET checked = true WHERE r.primaryKey=:id")
   void setCheckedTrue(@Param("id") Long id);
 
 

@@ -74,8 +74,8 @@
 				Lorem ipsum..<br>
 			</p>
       <p><h4 th:each="fotografia,i : ${richiesta.fotografie}" th:text="${'Foto' +i.count +': '+fotografia.nome}">Foto nome</h4> </p>
-      <form th:action="@{/admin}">
-      <input type="hidden" th:value="${richiesta.primaryKey}" name="check" method="post">
+      <form th:action="@{/admin}" method="post">
+      <input type="hidden" th:value="${richiesta.primaryKey}" name="check">
 			     <input type="submit" class="btn success" value="Gestisci">
       </form>
 

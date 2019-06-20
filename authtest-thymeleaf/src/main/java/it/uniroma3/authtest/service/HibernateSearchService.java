@@ -23,7 +23,7 @@ public class HibernateSearchService {
 
 
 	@Autowired
-	private final EntityManagerFactory centityManagerF;
+  private final EntityManagerFactory centityManagerF;
 
 
 	@Autowired

@@ -2,21 +2,29 @@ package it.uniroma3.authtest.controller;
 
 import it.uniroma3.authtest.model.Richiesta;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import it.uniroma3.authtest.service.FotografiaService;
 import it.uniroma3.authtest.service.FunzionarioService;
 import it.uniroma3.authtest.service.RichiestaService;
+import javax.persistence.EntityManagerFactory;
+
 /**
  * The MainController is a Spring Boot Controller to handle
  * the generic interactions with the home pages, and that do not refer to specific entities
  */
+@EnableTransactionManagement
 @Controller
 public class MainController {
+  @Autowired
+  private  EntityManagerFactory centityManagerF;
 
 	@Autowired
 	private FotografiaService fotografiaService;
@@ -67,10 +75,18 @@ public class MainController {
 		model.addAttribute("richieste", richiestaService.tutti());
 		return "admin";
 	}
-	@PostMapping(value= "/admin")
+
+
+	@RequestMapping(value= "/admin",method = RequestMethod.POST)
   public String richiestaGestita(Model model,   @RequestParam(value = "check") Long id){
 	  richiestaService.setCheckedTrue(id);
-
+    UserDetails details = (UserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+    String role = details.getAuthorities().iterator().next().getAuthority();    // get first authority
+    String email = details.getUsername();
+    model.addAttribute("username", email);
+    model.addAttribute("funzionario", funzionarioService.funzionarioPerEmail(details.getUsername()));
+    model.addAttribute("role", role);
+    model.addAttribute("richieste", richiestaService.tutti());
 	  return "admin";
   }
 }

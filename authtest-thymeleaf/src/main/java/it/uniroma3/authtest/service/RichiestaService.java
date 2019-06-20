@@ -19,7 +19,7 @@ public class RichiestaService {
 	}
 	
 	public Richiesta cercaPerId(Long id) {
-		return richiestaRepository.findByPrimaryKey(id);
+		return richiestaRepository.getOne(id);
 	}
 	
 	public List<Richiesta> tutti() {
@@ -33,5 +33,9 @@ public class RichiestaService {
 	public void cancella(Richiesta richiesta) {
 		richiestaRepository.delete(richiesta);
 	}
-	public void setCheckedTrue(Long id){ richiestaRepository.setCheckedTrue(id);}
+	@Transactional(readOnly = false)
+	public void setCheckedTrue(Long id){
+	  Richiesta r=cercaPerId(id);
+	  richiestaRepository.setCheckedTrue(id);
+	this.inserisci(r);}
 }

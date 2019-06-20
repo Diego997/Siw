@@ -13,9 +13,10 @@ public class Richiesta {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long primaryKey;
 	
-	@OneToOne
+	@OneToOne(cascade = CascadeType.ALL)
 	private Cliente cliente;
 
+	@Column
 	private boolean checked;
 	
 	@ManyToMany(targetEntity = Fotografia.class,cascade = CascadeType.ALL)
