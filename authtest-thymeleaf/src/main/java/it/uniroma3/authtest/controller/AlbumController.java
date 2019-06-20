@@ -59,6 +59,7 @@ public class AlbumController {
 			return "admin";
 		}
 		else {
+			model.addAttribute("fotografi", fotografoService.tutti());
 			return "addalbum";
 		}
 	}

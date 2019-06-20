@@ -17,20 +17,22 @@
 	<div class="smallline"></div>
 	<div>
 		<div class="header">
-		<form th:action="@{/search}" th:object="${search}">
-			<div class="search-box">
-				<input type="text" name="" class="search-txt"
-					placeholder="Type to search" /> <button type="submit" class="search-btn">
-					<i class="fas fa-search"></i>
-				</button>
-			</div>
-			<label class="container">Fotografo <input type="radio"
-				name="search" checked="checked"> <span class="checkmark"></span>
-			</label> <label class="container"> Album<input type="radio"
-				name="search"> <span class="checkmark"></span>
-			</label> <label class="container">Fotografia <input type="radio"
-				name="search"> <span class="checkmark"></span>
-			</label>
+			<form th:action="@{/search}" th:object="${search}" method="post">
+				<div class="search-box">
+					<input type="text" name="search" class="search-txt"
+						placeholder="Type to search" />
+					<button type="submit" class="search-btn">
+						<i class="fas fa-search"></i>
+					</button>
+				</div>
+				<label class="container">Fotografo <input type="radio"
+					name="tipo" value="fotografo" checked="checked" /> <span
+					class="checkmark"></span>
+				</label> <label class="container"> Album <input type="radio"
+					name="tipo" value="album"> <span class="checkmark"></span>
+				</label> <label class="container">Fotografia <input type="radio"
+					name="tipo" value="fotografia"> <span class="checkmark"></span>
+				</label>
 			</form>
 			<div class="button" sec:authorize="isAuthenticated()">
 				<a th:href="@{/admin}">
