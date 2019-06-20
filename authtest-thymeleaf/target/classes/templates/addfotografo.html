@@ -68,7 +68,7 @@
 			<input type="file" name="imgFile" id="file" class="upload"
 				multiple="multiple" /> <label for="file">Choose a file</label>
 			<h2>Descrizione</h2>
-			<textarea id="subject" name="subject" placeholder="Scrivi Qualcosa.."
+			<textarea id="subject" th:field="*{descrizione}" placeholder="Scrivi Qualcosa.."
 				style="height: 200px"></textarea>
 			<input type="submit" name="" value="Conferma">
 		</form>
