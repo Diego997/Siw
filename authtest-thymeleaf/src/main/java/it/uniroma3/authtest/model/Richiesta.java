@@ -23,6 +23,12 @@ public class Richiesta {
 
 	private final static int MAX_FOTO= 10;
 
+	public Richiesta(){
+	  this.checked=false;
+  }
+  public Richiesta(boolean checked){
+	  this.checked=checked;
+  }
 	
 	public Long getPrimaryKey() {
 		return primaryKey;
@@ -55,6 +61,7 @@ public class Richiesta {
 	public void setChecked(boolean checked) {
 		this.checked = checked;
 	}
+
   private Fotografia findLineByCode(Long code) {
     for (Fotografia line : this.fotografie) {
       if (line.getPrimaryKey().equals(code)) {
