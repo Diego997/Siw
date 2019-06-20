@@ -15,6 +15,7 @@ public class ClienteValidator implements Validator {
 
   @Override
   public void validate(Object target, Errors errors) {
+    ValidationUtils.rejectIfEmptyOrWhitespace(errors, "email", "required");
     ValidationUtils.rejectIfEmptyOrWhitespace(errors, "nome", "required");
     ValidationUtils.rejectIfEmptyOrWhitespace(errors, "cognome", "required");
 

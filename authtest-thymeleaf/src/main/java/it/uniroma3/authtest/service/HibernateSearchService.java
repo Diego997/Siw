@@ -5,6 +5,7 @@ import org.hibernate.search.jpa.FullTextEntityManager;
 import org.hibernate.search.jpa.Search;
 import org.hibernate.search.query.dsl.QueryBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -13,53 +14,52 @@ import it.uniroma3.authtest.model.Fotografia;
 import it.uniroma3.authtest.model.Fotografo;
 
 import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
 import javax.persistence.NoResultException;
 import java.util.List;
 
-@Service
+@Component
 public class HibernateSearchService {
 
 
 	@Autowired
-	private final EntityManager centityManager;
+	private final EntityManagerFactory centityManagerF;
 
 
 	@Autowired
-	public HibernateSearchService(EntityManager entityManager) {
+	public HibernateSearchService(EntityManagerFactory entityManager) {
 		super();
-		this.centityManager = entityManager;
+		this.centityManagerF = entityManager;
 	}
 
 
-	public void initializeHibernateSearch() {
+	public void initializeHibernateSearch() throws InterruptedException {
 
-		try {
-			FullTextEntityManager fullTextEntityManager = Search.getFullTextEntityManager(centityManager);
-			fullTextEntityManager.createIndexer().startAndWait();
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+		EntityManager em = centityManagerF.createEntityManager();
+		FullTextEntityManager fullTextEntityManager = org.hibernate.search.jpa.Search.getFullTextEntityManager(em);
+		fullTextEntityManager.createIndexer().startAndWait();
 	}
 
 	@Transactional
 	public List<Fotografia> fuzzySearchFotografia(String searchTerm) {
-
-		FullTextEntityManager fullTextEntityManager = Search.getFullTextEntityManager(centityManager);
+		EntityManager em = centityManagerF.createEntityManager();
+		FullTextEntityManager fullTextEntityManager =
+				org.hibernate.search.jpa.Search.getFullTextEntityManager(em);
+		em.getTransaction().begin();
 		QueryBuilder qb = fullTextEntityManager.getSearchFactory().buildQueryBuilder().forEntity(Fotografia.class).get();
-		Query luceneQuery = qb.keyword().fuzzy().withEditDistanceUpTo(2).withPrefixLength(1).onFields("nome")
-				.matching(searchTerm).createQuery();
+		org.apache.lucene.search.Query luceneQuery = qb.keyword().fuzzy().withEditDistanceUpTo(2).withPrefixLength(0).onFields("nome")
+				.matching(searchTerm.concat("*")).createQuery();
 
 		javax.persistence.Query jpaQuery = fullTextEntityManager.createFullTextQuery(luceneQuery, Fotografia.class);
 
 		// execute search
 
-		List<Fotografia> fotografiaList = null;
-		try {
-			fotografiaList = jpaQuery.getResultList();
-		} catch (NoResultException nre) {
-			;// do nothing
+		@SuppressWarnings("unchecked")
+		List<Fotografia> fotografiaList = jpaQuery.getResultList();
 
-		}
+
+		em.getTransaction().commit();
+		em.close();
 
 		return fotografiaList;
 	}
@@ -67,46 +67,46 @@ public class HibernateSearchService {
 
 	@Transactional
 	public List<Fotografo> fuzzySearchFotografo(String searchTerm) {
-
-		FullTextEntityManager fullTextEntityManager = Search.getFullTextEntityManager(centityManager);
-		QueryBuilder qb = fullTextEntityManager.getSearchFactory().buildQueryBuilder().forEntity(Fotografia.class).get();
-		Query luceneQuery = qb.keyword().fuzzy().withEditDistanceUpTo(2).withPrefixLength(1).onFields("nome", "cognome")
+		EntityManager em = centityManagerF.createEntityManager();
+		FullTextEntityManager fullTextEntityManager =
+				org.hibernate.search.jpa.Search.getFullTextEntityManager(em);
+		em.getTransaction().begin();
+		QueryBuilder qb = fullTextEntityManager.getSearchFactory().buildQueryBuilder().forEntity(Fotografo.class).get();
+		Query luceneQuery = qb.keyword().fuzzy().withEditDistanceUpTo(2).withPrefixLength(0).onFields("nome", "cognome")
 				.matching(searchTerm).createQuery();
 
-		javax.persistence.Query jpaQuery = fullTextEntityManager.createFullTextQuery(luceneQuery, Fotografia.class);
+		javax.persistence.Query jpaQuery = fullTextEntityManager.createFullTextQuery(luceneQuery, Fotografo.class);
 
 		// execute search
 
-		List<Fotografo> fotografoList = null;
-		try {
-			fotografoList = jpaQuery.getResultList();
-		} catch (NoResultException nre) {
-			;// do nothing
+		List<Fotografo> fotografoList = jpaQuery.getResultList();
 
-		}
+
+		em.getTransaction().commit();
+		em.close();
 
 		return fotografoList;
 	}
 
 	@Transactional
 	public List<Album> fuzzySearchAlbum(String searchTerm) {
-
-		FullTextEntityManager fullTextEntityManager = Search.getFullTextEntityManager(centityManager);
-		QueryBuilder qb = fullTextEntityManager.getSearchFactory().buildQueryBuilder().forEntity(Fotografia.class).get();
-		Query luceneQuery = qb.keyword().fuzzy().withEditDistanceUpTo(2).withPrefixLength(1).onFields("nome")
+		EntityManager em = centityManagerF.createEntityManager();
+		FullTextEntityManager fullTextEntityManager =
+				org.hibernate.search.jpa.Search.getFullTextEntityManager(em);
+		em.getTransaction().begin();
+		QueryBuilder qb = fullTextEntityManager.getSearchFactory().buildQueryBuilder().forEntity(Album.class).get();
+		Query luceneQuery = qb.keyword().fuzzy().withEditDistanceUpTo(2).withPrefixLength(0).onFields("nome")
 				.matching(searchTerm).createQuery();
 
-		javax.persistence.Query jpaQuery = fullTextEntityManager.createFullTextQuery(luceneQuery, Fotografia.class);
+		javax.persistence.Query jpaQuery = fullTextEntityManager.createFullTextQuery(luceneQuery, Album.class);
 
 		// execute search
 
-		List<Album> albumList = null;
-		try {
-			albumList = jpaQuery.getResultList();
-		} catch (NoResultException nre) {
-			;// do nothing
+		List<Album> albumList = jpaQuery.getResultList();
 
-		}
+
+		em.getTransaction().commit();
+		em.close();
 
 		return albumList;
 	}

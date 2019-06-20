@@ -15,9 +15,9 @@
 	<div class="smallline"></div>
 	<div>
 		<div class="header">
-			<form th:action="@{/search}">
+			<form th:action="@{/search}" th:object="${search}">
 				<div class="search-box">
-					<input type="text" name="" class="search-txt"
+					<input type="text" name="search" class="search-txt"
 						placeholder="Type to search" /> <a class="search-btn" href="#">
 						<i class="fas fa-search"></i>
 					</a>
@@ -39,9 +39,9 @@
 		<div class="smallline"></div>
 		<div class="line"></div>
 	</div>
-	<!-- Portfolio Gallery Grid -->
+	<!-- Photo Gallery Grid -->
 
-	<th:block th:each="fotografia, iterStat : ${fotografie}">
+	<th:block th:each="fotografia, iterStat : ${search}">
 		<th:block th:if="${iterStat.index}%4==0 or ${iterStat.first}">
 			<div class="row">
 		</th:block>
