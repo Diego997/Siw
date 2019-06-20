@@ -47,7 +47,7 @@ public class HibernateSearchService {
 				org.hibernate.search.jpa.Search.getFullTextEntityManager(em);
 		em.getTransaction().begin();
 		QueryBuilder qb = fullTextEntityManager.getSearchFactory().buildQueryBuilder().forEntity(Fotografia.class).get();
-		org.apache.lucene.search.Query luceneQuery = qb.keyword().fuzzy().withEditDistanceUpTo(2).withPrefixLength(1).onFields("nome")
+		org.apache.lucene.search.Query luceneQuery = qb.keyword().fuzzy().withEditDistanceUpTo(2).withPrefixLength(0).onFields("nome")
 				.matching(searchTerm.concat("*")).createQuery();
 
 		javax.persistence.Query jpaQuery = fullTextEntityManager.createFullTextQuery(luceneQuery, Fotografia.class);
@@ -72,7 +72,7 @@ public class HibernateSearchService {
 				org.hibernate.search.jpa.Search.getFullTextEntityManager(em);
 		em.getTransaction().begin();
 		QueryBuilder qb = fullTextEntityManager.getSearchFactory().buildQueryBuilder().forEntity(Fotografo.class).get();
-		Query luceneQuery = qb.keyword().fuzzy().withEditDistanceUpTo(2).withPrefixLength(1).onFields("nome", "cognome")
+		Query luceneQuery = qb.keyword().fuzzy().withEditDistanceUpTo(2).withPrefixLength(0).onFields("nome", "cognome")
 				.matching(searchTerm).createQuery();
 
 		javax.persistence.Query jpaQuery = fullTextEntityManager.createFullTextQuery(luceneQuery, Fotografo.class);
@@ -95,7 +95,7 @@ public class HibernateSearchService {
 				org.hibernate.search.jpa.Search.getFullTextEntityManager(em);
 		em.getTransaction().begin();
 		QueryBuilder qb = fullTextEntityManager.getSearchFactory().buildQueryBuilder().forEntity(Album.class).get();
-		Query luceneQuery = qb.keyword().fuzzy().withEditDistanceUpTo(2).withPrefixLength(1).onFields("nome")
+		Query luceneQuery = qb.keyword().fuzzy().withEditDistanceUpTo(2).withPrefixLength(0).onFields("nome")
 				.matching(searchTerm).createQuery();
 
 		javax.persistence.Query jpaQuery = fullTextEntityManager.createFullTextQuery(luceneQuery, Album.class);
