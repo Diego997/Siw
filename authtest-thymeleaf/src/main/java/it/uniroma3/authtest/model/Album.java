@@ -18,7 +18,7 @@ public class Album {
 	@ManyToOne
 	private Fotografo fotografo;
 
-	@OneToMany(targetEntity = Fotografia.class, cascade = CascadeType.ALL)
+	@OneToMany(targetEntity = Fotografia.class, cascade = CascadeType.ALL, mappedBy = "album")
 	private List<Fotografia> fotografie;
 
 	@Override
