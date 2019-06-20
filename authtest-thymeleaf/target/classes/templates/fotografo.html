@@ -36,7 +36,7 @@
 			<div class="column">
 				<div class="content">
 					<a th:href="@{/album/{id}(id=${album.primaryKey})}"><img
-						th:src="${album[0].img} == null ? _ : @{'data:image/png;base64,'+*{T(org.springframework.util.Base64Utils).encodeToString(album[0].img)}}"
+						th:src="${album.fotografie[0].img} == null ? _ : @{'data:image/png;base64,'+*{T(org.springframework.util.Base64Utils).encodeToString(album.fotografie[0].img)}}"
 						alt="" style="width: 100%"></a>
 					<h3 th:text="${album.nome}">Nome Album</h3>
 				</div>
