@@ -175,6 +175,9 @@ button:hover:after {
 }
 
 .search-btn {
+	position: relative;
+	top: -2px;
+	left: 6px; 	
 	color: #696969;
 	float: right;
 	width: 20px;
