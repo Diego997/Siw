@@ -18,7 +18,7 @@ public class Richiesta {
 
 	private boolean checked;
 	
-	@ManyToMany(targetEntity = Fotografia.class)
+	@ManyToMany(targetEntity = Fotografia.class,cascade = CascadeType.ALL)
   private Set<Fotografia> fotografie=new HashSet<Fotografia>();
 
 	private final static int MAX_FOTO= 10;

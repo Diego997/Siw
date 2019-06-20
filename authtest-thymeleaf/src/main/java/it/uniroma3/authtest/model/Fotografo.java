@@ -1,8 +1,17 @@
 package it.uniroma3.authtest.model;
 
 import javax.persistence.*;
+
+import org.hibernate.search.annotations.Analyze;
+import org.hibernate.search.annotations.Field;
+import org.hibernate.search.annotations.Index;
+import org.hibernate.search.annotations.Indexed;
+import org.hibernate.search.annotations.IndexedEmbedded;
+import org.hibernate.search.annotations.Store;
+
 import java.util.List;
 
+@Indexed
 @Entity
 @Table(name="fotografo")
 public class Fotografo {
@@ -10,18 +19,24 @@ public class Fotografo {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long primaryKey;
-	
+
+	@Field(index=Index.YES, analyze=Analyze.YES, store=Store.NO)
 	@Column
 	private String nome;
+	@Field(index=Index.YES, analyze=Analyze.YES, store=Store.NO)
 	@Column
 	private String cognome;
+	@Field(index=Index.YES, analyze=Analyze.YES, store=Store.NO)
 	@Column
 	private String descrizione;
+	@Field(index=Index.YES, analyze=Analyze.YES, store=Store.NO)
 	@Column(name="img")
 	private byte[] img;
+	
+	@IndexedEmbedded(depth = 1)
 	@OneToMany(targetEntity = Album.class, cascade = {CascadeType.ALL})
 	private List<Album> album;
-	
+
 	public Long getPrimaryKey() {
 		return primaryKey;
 	}
@@ -58,5 +73,5 @@ public class Fotografo {
 	public void setImg(byte[] img) {
 		this.img = img;
 	}
-	
+
 }

@@ -3,6 +3,14 @@ package it.uniroma3.authtest.model;
 import javax.persistence.*;
 
 
+import org.hibernate.search.annotations.Analyze;
+import org.hibernate.search.annotations.Field;
+import org.hibernate.search.annotations.Index;
+import org.hibernate.search.annotations.Indexed;
+import org.hibernate.search.annotations.IndexedEmbedded;
+import org.hibernate.search.annotations.Store;
+
+@Indexed
 @Entity
 @Table(name="fotografia")
 public class Fotografia {
@@ -11,17 +19,20 @@ public class Fotografia {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long primaryKey;
 	
+	@Field(index=Index.YES, analyze=Analyze.YES, store=Store.NO)
 	@Column
 	private String nome;
+	@Field(index=Index.YES, analyze=Analyze.YES, store=Store.NO)
 	@Column
 	private String descrizione;
-
+	@Field(index=Index.YES, analyze=Analyze.YES, store=Store.NO)
 	@Column(name="img")
 	private byte[] img;
-	
+	@Field(index=Index.YES, analyze=Analyze.YES, store=Store.NO)
 	@Column(name="thumb")
 	private byte[] thumb;
 	
+	@IndexedEmbedded
 	@ManyToOne
 	@JoinColumn(name = "album_id")
 	private Album album;

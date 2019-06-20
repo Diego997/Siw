@@ -2,7 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28cc92e9-6eec-4c0b-8035-96029c213e37" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/controller/SearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/model/Album.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/model/Album.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/model/Fotografia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/model/Fotografia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/model/Fotografo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/model/Fotografo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/service/HibernateSearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/service/HibernateSearchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/authtest/authtest/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/maven/authtest/authtest/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/authtest/authtest/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/maven/authtest/authtest/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/DBPopulation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/DBPopulation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/MvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/MvcConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/Utils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/auth/AuthConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/auth/AuthConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/controller/AlbumValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/controller/AlbumValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/controller/FotografiaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/controller/FotografiaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/controller/FotografiaValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/controller/FotografiaValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/controller/FotografoValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/controller/FotografoValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/controller/RichiestaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/controller/RichiestaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/controller/RichiestaValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/controller/RichiestaValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/controller/SearchController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/controller/SearchController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/model/Album.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/model/Album.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/model/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/model/Cliente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/model/Fotografia.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/model/Fotografia.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/model/Fotografo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/model/Fotografo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/model/Funzionario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/model/Funzionario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/service/ClienteService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/service/ClienteService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/service/FotografiaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/service/FotografiaService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/service/FotografoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/service/FotografoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/service/FunzionarioService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/service/FunzionarioService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/service/HibernateSearchService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/service/HibernateSearchService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/storage/AlbumRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/storage/AlbumRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/storage/ClienteRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/storage/ClienteRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/storage/FotografiaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/storage/FotografiaRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/storage/FotografoRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/storage/FotografoRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/storage/FunzionarioRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/uniroma3/authtest/storage/FunzionarioRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/search.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,48 +56,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/controller/RichiestaController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2244">
-              <caret line="132" column="37" lean-forward="true" selection-start-line="132" selection-start-column="37" selection-end-line="132" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/storage/RichiestaRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#0#63#1" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/service/HibernateSearchService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="94" column="14" selection-start-line="94" selection-start-column="14" selection-end-line="94" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/shoppingCart.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+            <state relative-caret-position="33">
+              <caret line="2" column="38" lean-forward="true" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -65,8 +68,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/model/Fotografia.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="-475">
+              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/controller/SearchController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/model/Album.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-907">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -74,8 +98,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="57" column="36" lean-forward="true" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
+            <state relative-caret-position="238">
+              <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-204">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
@@ -224,7 +257,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -325,18 +357,11 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="messages" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="authtest-thymeleaf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="authtest-thymeleaf" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -348,6 +373,7 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560168878443" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -426,11 +452,12 @@
       <workItem from="1560950065153" duration="12741000" />
       <workItem from="1560971042072" duration="3437000" />
       <workItem from="1561017338612" duration="2301000" />
+      <workItem from="1561028830044" duration="374000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29353000" />
+    <option name="totallyTimeSpent" value="29727000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -444,7 +471,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19194631" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23892617" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -454,7 +481,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32841823" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32841823" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3994638" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -484,17 +511,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/service/AlbumService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/welcome.html" />
     <entry file="file://$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/DBPopulation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
@@ -595,13 +611,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/foto.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/home.html" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-714" />
@@ -652,13 +662,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
@@ -715,9 +718,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/foto2.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/foto2.html" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/shoppingCartCustomer.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -784,6 +785,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/controller/RichiestaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1481">
+          <caret line="132" column="37" selection-start-line="132" selection-start-column="37" selection-end-line="132" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/storage/RichiestaRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/shoppingCart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/controller/RichiestaValidator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -822,55 +850,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/storage/RichiestaRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/model/Fotografia.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+        <state relative-caret-position="-475">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#0#63#1" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/controller/SearchController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/model/Album.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-907">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/service/HibernateSearchService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="94" column="14" selection-start-line="94" selection-start-column="14" selection-end-line="94" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/shoppingCart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/model/Fotografia.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="33">
+          <caret line="2" column="38" lean-forward="true" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="57" column="36" lean-forward="true" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
+        <state relative-caret-position="238">
+          <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/uniroma3/authtest/controller/RichiestaController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2244">
-          <caret line="132" column="37" lean-forward="true" selection-start-line="132" selection-start-column="37" selection-end-line="132" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-204">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
