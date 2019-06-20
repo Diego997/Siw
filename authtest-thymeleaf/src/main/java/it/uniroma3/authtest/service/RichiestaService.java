@@ -33,4 +33,5 @@ public class RichiestaService {
 	public void cancella(Richiesta richiesta) {
 		richiestaRepository.delete(richiesta);
 	}
+	public void setCheckedTrue(Long id){ richiestaRepository.setCheckedTrue(id);}
 }

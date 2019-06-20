@@ -4,7 +4,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Richieste</title>
-<link rel="stylesheet" href="css/funzionario.css" />
+<link rel="stylesheet" th:href="@{/css/funzionario.css}" />
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="js/funzionario.js"></script>
 
@@ -74,7 +74,11 @@
 				Lorem ipsum..<br>
 			</p>
       <p><h4 th:each="fotografia,i : ${richiesta.fotografie}" th:text="${'Foto' +i.count +': '+fotografia.nome}">Foto nome</h4> </p>
-			<button class="btn success">Gestisci</button>
+      <form th:action="@{/admin}">
+      <input type="hidden" th:value="${richiesta.primaryKey}" name="check" method="post">
+			     <input type="submit" class="btn success" value="Gestisci">
+      </form>
+
 		</div>
 	</th:block>
 </th:block>

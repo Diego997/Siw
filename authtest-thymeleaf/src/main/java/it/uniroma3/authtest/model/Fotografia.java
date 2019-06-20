@@ -2,6 +2,7 @@ package it.uniroma3.authtest.model;
 
 import javax.persistence.*;
 
+
 import org.hibernate.search.annotations.Analyze;
 import org.hibernate.search.annotations.Field;
 import org.hibernate.search.annotations.Index;

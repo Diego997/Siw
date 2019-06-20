@@ -1,13 +1,12 @@
 package it.uniroma3.authtest.controller;
 
+import it.uniroma3.authtest.model.Richiesta;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 
 import it.uniroma3.authtest.service.FotografiaService;
 import it.uniroma3.authtest.service.FunzionarioService;
@@ -68,4 +67,10 @@ public class MainController {
 		model.addAttribute("richieste", richiestaService.tutti());
 		return "admin";
 	}
+	@PostMapping(value= "/admin")
+  public String richiestaGestita(Model model,   @RequestParam(value = "check") Long id){
+	  richiestaService.setCheckedTrue(id);
+
+	  return "admin";
+  }
 }
