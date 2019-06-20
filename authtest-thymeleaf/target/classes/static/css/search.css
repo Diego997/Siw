@@ -97,16 +97,6 @@ body {
 	display: none;
 }
 
-.badge {
-	position: absolute;
-	top: 0;
-	right: 0;
-	padding: 5px 10px;
-	border-radius: 50%;
-	background: black;
-	color: white;
-}
-
 button {
 	position: relative;
 	top: -45px;

@@ -20,9 +20,9 @@
 		<form th:action="@{/search}" th:object="${search}">
 			<div class="search-box">
 				<input type="text" name="" class="search-txt"
-					placeholder="Type to search" /> <a class="search-btn" href="#">
+					placeholder="Type to search" /> <button type="submit" class="search-btn">
 					<i class="fas fa-search"></i>
-				</a>
+				</button>
 			</div>
 			<label class="container">Fotografo <input type="radio"
 				name="search" checked="checked"> <span class="checkmark"></span>
