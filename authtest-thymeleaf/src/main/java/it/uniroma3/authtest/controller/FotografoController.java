@@ -25,13 +25,13 @@ public class FotografoController {
 
 	@Autowired
 	private FotografoService fotografoService;
-	
+
 	@Autowired
 	private FotografoValidator fotografoValidator;
-	
+
 	@Autowired
 	private FunzionarioService funzionarioService;
-	
+
 	@GetMapping("/addfotografo")
 	public String addFotografo(Model model) {
 		UserDetails details = (UserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
@@ -39,27 +39,29 @@ public class FotografoController {
 		model.addAttribute("fotografo", new Fotografo());
 		return "addfotografo";
 	}
-	
+
 	@PostMapping("/addfotografo")
 	public String uploadFotografo(@RequestParam("imgFile") MultipartFile imageFile, @Valid @ModelAttribute("fotografo") Fotografo fotografo, Model model, BindingResult bindingResult ){
 		UserDetails details = (UserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
 		model.addAttribute("funzionario", funzionarioService.funzionarioPerEmail(details.getUsername()));
 		this.fotografoValidator.validate(fotografo, bindingResult);
+		if(!(imageFile.getSize()>0))
+			bindingResult.reject("foto");
 		if (!bindingResult.hasErrors() && imageFile.getSize()>0) {
-            fotografoService.salva(imageFile, fotografo);
-            model.addAttribute("fotografo", fotografo);
-            return "admin";
-        }
+			fotografoService.salva(imageFile, fotografo);
+			model.addAttribute("fotografo", fotografo);
+			return "admin";
+		}
 		else {
 			return "addfotografo";
 		}
 	}
-	
-	
-	
+
+
+
 	@GetMapping("/fotografo/{id}")
 	public String showAlbumImage(@PathVariable Long id, Model model) {
-		
+
 		Fotografo fotografo = fotografoService.trovaById(id);
 		model.addAttribute("fotografo", fotografo);
 		model.addAttribute("album", fotografo.getAlbum());

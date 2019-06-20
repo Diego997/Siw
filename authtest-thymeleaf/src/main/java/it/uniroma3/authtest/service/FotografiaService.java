@@ -50,7 +50,6 @@ public class FotografiaService {
 			img = Scalr.resize(img, dimension.width, dimension.height);
 			ByteArrayOutputStream baos = new ByteArrayOutputStream();
 			ImageIO.write(img, imageFile.getContentType().replace("image/", ""), baos);
-			fotografia.setDescrizione(imageFile.getContentType().replace("image/", ""));
 			bytes = baos.toByteArray();
 			
 			InputStream is2 = imageFile.getInputStream();

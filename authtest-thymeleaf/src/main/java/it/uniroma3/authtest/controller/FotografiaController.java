@@ -66,6 +66,9 @@ public class FotografiaController {
 		UserDetails details = (UserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
 		model.addAttribute("funzionario", funzionarioService.funzionarioPerEmail(details.getUsername()));
 		this.fotografiaValidator.validate(fotografia, bindingResult);
+		if(!(imageFile.getSize()>0))
+			bindingResult.reject("foto");
+		
 		if (!bindingResult.hasErrors() && imageFile.getSize()>0) {
 			Album album = fotografia.getAlbum();
 			fotografiaService.salvaFoto(imageFile, fotografia);
@@ -74,6 +77,7 @@ public class FotografiaController {
 			return "admin";
 		}
 		else {
+			model.addAttribute("album", albumService.tutti());
 			return "addfotografia";
 		}
 	}

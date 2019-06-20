@@ -23,8 +23,8 @@
 			</div>
 		</div>
 	</div>
-	<form th:action="@{/inserisciFotoRichiesta}">
-	<input type="hidden" th:value="${fotografia.primaryKey}" name="id" method="post">
+	<form th:action="@{/inserisciFotoRichiesta}" method="post">
+	<input type="hidden" th:value="${fotografia.primaryKey}" name="id">
 	<input type="submit" class="btn" value="Aggiungi al Carrello">
 		<i class="fa fa-shopping-cart"></i>
 	</form>

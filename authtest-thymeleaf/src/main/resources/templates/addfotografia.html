@@ -57,21 +57,25 @@
 	<div class="central">
 		<form class="loginbox" th:action="@{/addfotografia}"
 			th:object="${fotografia}" method="post" enctype="multipart/form-data">
-			<h2>Seleziona Album</h2>
+			<ul th:if="${#fields.hasErrors('*')}">
+				<li th:each="err : ${#fields.errors('*')}" th:text="${err}">Input
+					is incorrect</li>
+			</ul>
+			<h2 th:text="#{msg.selectalbum}">Seleziona Album</h2>
 			<label for="Album"></label> <select th:field="*{album}">
 				<option th:each="album: ${album}" th:value="${album.primaryKey}"
 					th:text="${album.primaryKey+' '+album.nome +' di '+album.fotografo.cognome + ' '+album.fotografo.nome}">
 			</select>
-			<h2>Nome Fotografia</h2>
+			<h2 th:text="#{msg.nomefotografia}">Nome Fotografia</h2>
 			<input type="text" th:field="*{nome}"
 				placeholder="Aggiungi Nome Fotografia">
-			<h3>Aggiungi Foto</h3>
+			<h3 th:text="#{msg.aggiungifoto}">Aggiungi Foto</h3>
 			<input type="file" name="imgFile" id="file" class="upload"
 				multiple="multiple" /> <label for="file">Choose a file</label>
-			<h2>Descrizione</h2>
+			<h2 th:text="#{msg.descrizione}">Descrizione</h2>
 			<textarea id="subject" th:field="*{descrizione}"
-				placeholder="Scrivi Qualcosa.." style="height: 200px"></textarea>
-			<input type="submit" name="" value="Conferma">
+				th:placeholder="#{msg.scriviqualcosa}" style="height: 200px"></textarea>
+			<input type="submit" name="" th:value="#{msg.conferma}">
 		</form>
 	</div>
 </body>
