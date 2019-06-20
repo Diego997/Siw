@@ -2,6 +2,7 @@ package it.uniroma3.authtest.model;
 
 import javax.persistence.*;
 
+
 @Entity
 @Table(name="fotografia")
 public class Fotografia {
