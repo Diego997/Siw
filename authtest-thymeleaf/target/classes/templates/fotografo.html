@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity">
+<head>
+<link rel="stylesheet" th:href="@{/css/album.css}" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fotografo</title>
+</head>
+<body>
+	<div class="mediumline"></div>
+	<div class="smallline"></div>
+	<div>
+		<div class="header">
+			<a href="#" class="notification"> <span>Carrello</span> <span
+				class="badge">3</span>
+			</a>
+		</div>
+		<div class="smallline"></div>
+		<div class="line"></div>
+	</div>
+	<div class="main">
+
+		<h1 th:text="${fotografo.nome+' '+fotografo.cognome}">Nome
+			Fotografo</h1>
+		<hr>
+		<p th:text="${fotografo.descrizione}">Descrizione Fotografo</p>
+
+
+		<!-- Portfolio Gallery Grid -->
+		<th:block th:each="album, iterStat : ${album}">
+			<th:block th:if="${iterStat.index}%4==0 or ${iterStat.first}">
+				<div class="row">
+			</th:block>
+
+			<div class="column">
+				<div class="content">
+					<a th:href="@{/album/{id}(id=${album.primaryKey})}"><img
+						th:src="${album[0].img} == null ? _ : @{'data:image/png;base64,'+*{T(org.springframework.util.Base64Utils).encodeToString(album[0].img)}}"
+						alt="" style="width: 100%"></a>
+					<h3 th:text="${album.nome}">Nome Album</h3>
+				</div>
+			</div>
+			<th:block th:if="${iterStat.index}%4==3 or ${iterStat.last}">
+	</div>
+	</th:block>
+	</th:block>
+	<!-- END GRID -->
+	</div>
+
+</body>
+</html>

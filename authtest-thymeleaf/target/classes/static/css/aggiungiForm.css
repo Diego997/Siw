@@ -187,8 +187,7 @@ h1 {
 }
 
 .upload+label {
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 30%;
 	width: 200px;
 	height: 40px;
 	font-size: 1em;
@@ -264,7 +263,7 @@ h1 {
 	transition: 0.25s;
 	cursor: pointer;
 	font-size: 20px;
-	heigth: 30px;
+	heigth: 20px;
 }
 
 .loginbox input[type="submit"]:hover {
