@@ -22,6 +22,7 @@ public class Fotografia {
 	private byte[] thumb;
 	
 	@ManyToOne
+	@JoinColumn(name = "album_id")
 	private Album album;
 
 	@Override

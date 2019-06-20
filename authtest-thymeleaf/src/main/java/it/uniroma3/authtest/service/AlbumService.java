@@ -1,6 +1,7 @@
 package it.uniroma3.authtest.service;
 
 import it.uniroma3.authtest.model.Album;
+import it.uniroma3.authtest.model.Fotografia;
 import it.uniroma3.authtest.storage.AlbumRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -37,5 +38,9 @@ public class AlbumService {
 
 	public void salva(@Valid Album album) {
 		this.albumRepository.save(album);
+	}
+
+	public Album cercaPerId(Long id) {
+		return this.albumRepository.getOne(id);
 	}
 }

@@ -1,5 +1,7 @@
 package it.uniroma3.authtest.controller;
 
+import java.util.List;
+
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,10 +12,12 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import it.uniroma3.authtest.model.Fotografo;
 import it.uniroma3.authtest.model.Album;
+import it.uniroma3.authtest.model.Fotografia;
 import it.uniroma3.authtest.service.AlbumService;
 import it.uniroma3.authtest.service.FotografoService;
 import it.uniroma3.authtest.service.FunzionarioService;
@@ -29,7 +33,7 @@ public class AlbumController {
 
 	@Autowired
 	private FunzionarioService funzionarioService;
-	
+
 	@Autowired
 	private FotografoService fotografoService;
 
@@ -57,6 +61,18 @@ public class AlbumController {
 		else {
 			return "addalbum";
 		}
+	}
+
+	@GetMapping("/album/{id}")
+	public String showFotografiaImage(@PathVariable Long id, Model model) {
+
+		Album album = albumService.cercaPerId(id);
+
+		List<Fotografia> fotografie = album.getFotografie();
+		model.addAttribute("album", album);
+		model.addAttribute("fotografie", fotografie);
+		System.out.print(fotografie);
+		return "album";
 	}
 
 }

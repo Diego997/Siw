@@ -31,40 +31,35 @@
 				</label>
 			</form>
 			<div class="button">
-				<button type="button">Carrello<i class="fa fa-shopping-cart"></i>  <span class="badge">3</span></button>
+				<button type="button">
+					Carrello<i class="fa fa-shopping-cart"></i> <span class="badge">3</span>
+				</button>
 			</div>
 		</div>
 		<div class="smallline"></div>
 		<div class="line"></div>
 	</div>
 	<!-- Portfolio Gallery Grid -->
-	<div class="row">
+
+	<th:block th:each="fotografia, iterStat : ${fotografie}">
+		<th:block th:if="${iterStat.index}%4==0 or ${iterStat.first}">
+			<div class="row">
+		</th:block>
+
 		<div class="column">
 			<div class="content">
-				<a href="Foto.html" class="image"><img src="images/fulls/10.jpg"
-					alt="Mountains" style="width: 100%"></a>
-				<h3>Nome Foto</h3>
+				<a th:href="@{/fotografia/{id}(id=${fotografia.primaryKey})}"><img
+						th:src="${fotografia.img} == null ? _ : @{'data:image/png;base64,'+*{T(org.springframework.util.Base64Utils).encodeToString(fotografia.img)}}"
+						alt="" style="width: 100%"></a>
+				<h3 th:text="${fotografia.nome}">Nome Foto</h3>
 			</div>
 		</div>
-		<div class="column">
-			<div class="content">
-				<img src="images/fulls/10.jpg" alt="Lights" style="width: 100%">
-				<h3>My Work</h3>
+		<th:block th:if="${iterStat.index}%4==3 or ${iterStat.last}">
 			</div>
-		</div>
-		<div class="column">
-			<div class="content">
-				<img src="images/fulls/10.jpg" alt="Nature" style="width: 100%">
-				<h3>My Work</h3>
-			</div>
-		</div>
-		<div class="column">
-			<div class="content">
-				<img src="images/fulls/10.jpg" alt="Mountains" style="width: 100%">
-				<h3>My Work</h3>
-			</div>
-		</div>
+		</th:block>
+	</th:block>
+
 		<!-- END GRID -->
-	</div>
+	
 </body>
 </html>
